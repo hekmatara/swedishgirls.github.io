@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?8056">
+	<link rel="stylesheet" type="text/css" href="style.css?390">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?393">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	
+    <title>Images</title>
+
+
+<style>
+
+
+html {
+    cursor: url("https://static.cargo.site/images/up.png"), auto !important;
+}
+
+ .button-blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2px;
+  padding-right: 10px;
+}
+
+
+ .div-delete2 {
+ 	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+ 	
+ 
+ .bottom-logo {
+ 	white-space: nowrap;
+ }
+ 
+
+ .navbar {
+ 	padding: 0;
+ 	margin: 0;
+ 	
+ }
+ 
+ .blocsapp-special-menu blocsnav {
+ 	background: white;
+ }
+ 
+ .close-special-menu {
+ 	font-color: black;
+ 	
+ }
+ 
+ .close-icon {
+ 	color: black;
+ }
+ 
+ card {
+ 	background: white;
+ }
+ 
+ .c-pad-al {
+ 	padding-left: 20px;
+ 	padding-right: 20px;
+ }
+
+
+ form {
+ 	display: grid;
+ 	width: ;
+ }
+
+select {
+	width: 100%;
+}
+
+ input {
+ 	width: 100%;
+ }
+ 
+ textarea {
+ 	width: 100%;
+ }
+ 
+ .toggle-button {
+ 	position: fixed;
+ 	top: 15px;
+ 	left: 10px;
+ 	z-index: 10;
+ }
+ 
+  a[data-lightbox]:hover img {
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 	opacity: 1;
+ 	
+ }
+ 
+  @media only screen and (max-width: 1000px) {
+   a[data-lightbox]:hover img {
+    box-shadow: none;
+    
+    background-color: none;
+  }
+}
+ 
+
+ 
+  a[data-lightbox]:hover::before {
+  	content: none!important;
+  	
+  }
+  
+  @media only screen and (max-width: 1000px) {
+   img {
+  	 width: 120%;
+  }
+}
+
+
+ .column-proj-head {
+ 	display: flex;
+    align-items: center;
+ 	justify-content: center;
+ }
+ 
+ .banner-project {
+ 	top: -50px;
+ }
+
+</style>
+
+<script>
+
+</script>
+
+
+
+
+
+
+<style>
+
+ .ref::before {
+  content: "images";
+}
+
+ #navbar {
+ 	z-index: 999999;
+ 	width: 100%;
+ }
+
+.listitem-images {
+ 	border-bottom: solid 4px #4B80F5;
+ }
+ 
+
+ body .modal-open {
+ 	overflow: visible;
+ }
+
+.blocs-lb-container {
+    position: fixed;
+	top: 0px;
+	right: 0;
+	width: 50vw;
+	height: 100vh;
+	overflow: visible;
+	padding-top: 151px;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+ @media only screen and (max-width: 1000px) {
+   .blocs-lb-container {
+    display: none;
+  }
+}
+
+
+ .lightbox-modal {
+ }
+ 
+ .modal-open .modal {
+ 	overflow: visible;
+ }
+ 
+ .modal-open {
+ 	overflow: visible;
+ 	padding-right: 0 !important;
+ }
+ 
+ .modal-content {
+ 	
+ }
+ 
+
+ .modal.fade .modal-dialog {
+ 	transition: none;
+ 	overflow: visible;
+ }
+ 	
+ .modal-backdrop {
+   background-color: transparent;
+   overflow: visible;
+
+ }
+ 
+ .modal-dialog {
+ 	position: relative;
+ 	right: 0;
+ }
+ 
+ .fade {
+ 	transistion: none;
+ }
+ 
+ #lightbox-modal {
+ 	padding-right: 0 !important;
+ }
+ 
+ .modal-body {
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ 	
+ }
+ 
+ .prev-lightbox {
+ 	width: 35px;
+ 	height: 35px;
+ 	top: 10px;
+ 	right: 5%;
+ 	left: 80%;
+ 	opacity: 0.8;
+ 	padding-right: 18px;
+ 	padding
+ 
+ 	
+ }
+ 
+  .next-lightbox {
+  	width: 35px;
+  	height: 35px;
+  	right: 2%;
+ 	top: 10px;
+ 	align: right;
+ 	opacity: 0.8;
+ 	padding-left: 10px;
+ 	
+  }
+ 
+ .close-lightbox {
+ 	width: 35px;
+ 	top: 160px;
+ 	left: 30px;
+ 	opacity: 0.8;
+ 	background: black;
+ 	border-radius: 20px;
+ 	cursor: auto;
+ }
+ 
+
+
+ 	
+ 
+
+   
+ </style>
+ 
+ <script>
+
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+
+</script>
+ 
+
+    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
+    
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- navbar -->
+<div class="bloc full-width-bloc row-1-style bgc-white l-bloc" id="navbar">
+	<div class="container ">
+		<div class="row">
+			<div class="col-lg-1 col-md-1">
+				<h1 class="text-sm-center text-center float-lg-none h1-style text-lg-left text-md-left">
+					<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
+				</h1>
+			</div>
+			<div class="left-padding-col col-lg-6 col-md-8">
+				<div class=" input-style">
+					<p><span class="ref"></span></p>
+					
+				</div>
+			</div>
+			<div class="left-padding-col offset-lg-1 col-lg-7 col-md-8 offset-md-1">
+					<nav class="navbar navbar-light row nav-invert bar-nav navbar-expand-md" role="navigation">
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 toggle-button" data-toggle="collapse" data-target=".navbar-22859" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-22859  fullscreen-nav open-left">
+							<ul class="site-navigation nav navbar-nav menu-nav">
+								<li class="nav-item">
+									<a href="swedishgirls.html" class="nav-link a-btn">All</a>
+								</li>
+								<li class="nav-item">
+									<a href="images.html" class="nav-link a-btn">Images</a>
+								</li>
+								<li class="nav-item">
+									<a href="videos.html" class="nav-link a-btn">Videos</a>
+								</li>
+								<li class="nav-item">
+									<a href="maps.html" class="nav-link a-btn">Maps</a>
+								</li>
+								<li class="nav-item">
+									<a href="news.html" class="nav-link a-btn">News</a>
+								</li>
+								<li class="nav-item">
+									<a href="shopping.html" class="nav-link a-btn">Shopping</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+		</div>
+	</div>
+</div>
+<!-- navbar END -->
+
+<!-- bloc-11 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-11">
+	<div class="container ">
+		<div class="row">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-6 offset-md-1">
+				<div>
+					<p class="mg-sm">
+						About 9 999 999 999 999 999 results (0,01 seconds)
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-11 END -->
+
+<!-- bloc-13 -->
+<div class="bloc bloc-images l-bloc" id="bloc-13">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/red-leaves.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/red-leaves.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="red leaves" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/mountains.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mountains.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="mountains" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/lanterns.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/lanterns.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="lanterns" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/valley.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/valley.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="valley" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-13 END -->
+
+<!-- bloc-14-images -->
+<div class="bloc bloc-images l-bloc" id="bloc-14-images">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/lanterns.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/lanterns.jpg" class="img-fluid mx-auto d-block lazyload" alt="lanterns" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/valley.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/valley.jpg" class="img-fluid mx-auto d-block lazyload" alt="valley" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/red-leaves.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/red-leaves.jpg" class="img-fluid mx-auto d-block lazyload" alt="red leaves" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/mountains.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mountains.jpg" class="img-fluid mx-auto d-block lazyload" alt="mountains" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-14-images END -->
+
+<!-- bloc-15 -->
+<div class="bloc bloc-images l-bloc" id="bloc-15">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/lanterns.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/lanterns.jpg" class="img-fluid mx-auto d-block lazyload" alt="lanterns" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/valley.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/valley.jpg" class="img-fluid mx-auto d-block lazyload" alt="valley" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/red-leaves.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/red-leaves.jpg" class="img-fluid mx-auto d-block lazyload" alt="red leaves" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/mountains.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mountains.jpg" class="img-fluid mx-auto d-block lazyload" alt="mountains" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-15 END -->
+
+<!-- bloc-16 -->
+<div class="bloc bloc-images l-bloc" id="bloc-16">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/lanterns.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/lanterns.jpg" class="img-fluid mx-auto d-block lazyload" alt="lanterns" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/valley.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/valley.jpg" class="img-fluid mx-auto d-block lazyload" alt="valley" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/red-leaves.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/red-leaves.jpg" class="img-fluid mx-auto d-block lazyload" alt="red leaves" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/mountains.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mountains.jpg" class="img-fluid mx-auto d-block lazyload" alt="mountains" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-16 END -->
+
+<!-- bloc-17 -->
+<div class="bloc bloc-images l-bloc" id="bloc-17">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/lanterns.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/lanterns.jpg" class="img-fluid mx-auto d-block lazyload" alt="lanterns" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/valley.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/valley.jpg" class="img-fluid mx-auto d-block lazyload" alt="valley" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/red-leaves.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/red-leaves.jpg" class="img-fluid mx-auto d-block lazyload" alt="red leaves" /></a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" data-lightbox="img/mountains.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mountains.jpg" class="img-fluid mx-auto d-block lazyload" alt="mountains" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-17 END -->
+
+<!-- bloc-28 -->
+<div class="bloc bgc-anti-flash-white l-bloc footer-border" id="bloc-28">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-28 END -->
+
+</div>
+<!-- Main container END -->
+    
+
+<script src="./js/jquery-3.3.1.min.js?9221"></script>
+<script src="./js/bootstrap.bundle.min.js?9149"></script>
+<script src="./js/blocs.min.js?6853"></script>
+<script src="./js/jquery.touchSwipe.min.js" defer></script>
+<script src="./js/lazysizes.min.js" defer></script>
+<!-- Additional JS END -->
+
+
+</body>
+</html>
