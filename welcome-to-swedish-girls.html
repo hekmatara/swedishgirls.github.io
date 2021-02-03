@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?3239">
-	<link rel="stylesheet" type="text/css" href="style.css?8137">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?1689">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?4219">
+	<link rel="stylesheet" type="text/css" href="style.css?7764">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?8822">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/feather.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Arial+bold+italic&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <title>Coming soon</title>
+    <title>Welcome to Swedish Girls</title>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -162,7 +162,86 @@ select {
 
 
 
+<style>
 
+ #bloc {
+ 	
+ 
+ }
+
+ .typ-div {
+ 	
+ 	width: 600px;
+ 	margin-bottom: 30px;
+ 	
+ }
+ 
+ .typ-column {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 
+ 
+ }
+
+
+ 
+
+</style>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "swedish girls"];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("h2").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+
+    function pageRedirect() {
+        window.location.replace("Swedish-Girls.html");
+    }      
+    setTimeout("pageRedirect()", 3000);
+
+
+</script>
     
 <!-- Analytics -->
  
@@ -173,27 +252,34 @@ select {
 <!-- Main container -->
 <div class="page-container">
     
-<!-- bloc-36 -->
-<div class="bloc l-bloc bloc-fill-screen animated fadeIn animSpeedSlow" id="bloc-36" data-appear-anim-style="fadeIn">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="align-self-center col-lg-12 col-md-12 col-sm-12">
-				<div >
-					<p id="demo" style="font-family:Arial bold italic; font-size: 30px; text-align: center; padding-top:100px; "></p>
-					
+<!-- bloc -->
+<div class="bloc none fade-in splash d-flex l-bloc" id="bloc">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="google-front text-lg-center text-md-center text-sm-center text-center mg-md">
+					<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
+				</h1>
+			</div>
+			<div class="typ-column col-lg-12">
+				<div class="text-lg-left typ-div">
+					<h2 class="mg-md typewriter">
+						swedish girls<br>
+					</h2>
 				</div>
+			</div>
+			<div class="typ-column col">
+				<p class="lucky-buttons">
+					Search
+				</p>
+				<p class="lucky-buttons">
+					I&rsquo;m Feeling Lucky
+				</p>
 			</div>
 		</div>
 	</div>
-	<div class="container fill-bloc-bottom-edge">
-			<div class="row">
-				<div class="col-lg-2 offset-lg-5 col-md-4 offset-md-4 offset-sm-4 col-sm-4 col-6 offset-3">
-					<img src="img/lazyload-ph.png" data-src="img/swedish-girls-presskit.png" class="img-fluid mx-auto d-block img-style lazyload " alt="swedish girls-presskit" />
-				</div>
-			</div>
-		</div>
 </div>
-<!-- bloc-36 END -->
+<!-- bloc END -->
 
 </div>
 <!-- Main container END -->
@@ -205,35 +291,6 @@ select {
 <script src="./js/lazysizes.min.js" defer></script>
 <!-- Additional JS END -->
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 9, 2021 12:00:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "Coming soon";
-  }
-}, 1000);
-</script>
 </body>
 </html>
