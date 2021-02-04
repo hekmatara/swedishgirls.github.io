@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?4219">
-	<link rel="stylesheet" type="text/css" href="style.css?7764">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?8822">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?460">
+	<link rel="stylesheet" type="text/css" href="style.css?1561">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?5302">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/feather.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Arial+bold+italic&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
     <title>Welcome to Swedish Girls</title>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -36,6 +36,11 @@ html {
   padding-left: 2px;
   padding-right: 10px;
 }
+
+ .ref {
+ 	font-size: 16px;
+ 	color: black;
+ }
 
 
  .search-path {
@@ -94,23 +99,6 @@ html {
  .card {
  	background: white;
  }
-
- form {
- 	display: grid;
- 	width: ;
- }
-
-select {
-	width: 100%;
-}
-
- input {
- 	width: 100%;
- }
- 
- textarea {
- 	width: 100%;
- }
  
  .toggle-button {
  	position: fixed;
@@ -152,6 +140,62 @@ select {
  .banner-project {
  	top: -50px;
  }
+ 
+ 
+  .blocs-lb-container img {
+	max-height: 90vh;
+        
+ }
+ 
+   .blocs-lb-container {
+     border: none;
+     background: transparent;
+   }
+	
+  @media only screen and (max-width: 1000px) {
+  	.blocs-lb-container {
+  	left: 0;
+  	right: 0;
+
+  }
+  .blocs-lb-container img {
+  	height: auto;
+
+  	
+  }
+  }
+  
+  .prev-lightbox {
+  	left: 0;
+  	  	border-radius: 0;
+
+  }
+  
+  .next-lightbox {
+   right: 0;
+     	border-radius: 0;
+
+  }
+  
+  .close-lightbox {
+  	background: white;
+  	color: black;
+  
+  	top: 0;
+  	right: 0;
+  	border-radius: 0;
+  	transition: 0.2s;
+  	cursor: pointer;
+
+    
+  	
+  }
+    .close-lightbox:hover {
+  	background: white;
+  	color: black;
+
+  	
+  }
 
 </style>
 
@@ -285,12 +329,21 @@ document.addEventListener('DOMContentLoaded',function(event){
 <!-- Main container END -->
     
 
-<script src="./js/jquery-3.3.1.min.js?8923"></script>
-<script src="./js/bootstrap.bundle.min.js?1057"></script>
-<script src="./js/blocs.min.js?8622"></script>
+<script src="./js/jquery-3.3.1.min.js?1343"></script>
+<script src="./js/bootstrap.bundle.min.js?9856"></script>
+<script src="./js/blocs.min.js?1133"></script>
 <script src="./js/lazysizes.min.js" defer></script>
 <!-- Additional JS END -->
+<style>
 
+ .footer-div-center {
+ 	display: flex;
+ 	justify-content: center;
+ 	font-size: 14px;
+ }
+ 	
+ 	
+ 	</style>
 
 </body>
 </html>

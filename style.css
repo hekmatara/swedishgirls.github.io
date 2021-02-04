@@ -128,57 +128,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 }
 
-/* Dark theme */
-
-.d-bloc{
-	color:rgba(255,255,255,.7);
-}
-.d-bloc button:hover{
-	color:rgba(255,255,255,.9);
-}
-.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
-	border-color:rgba(255,255,255,.9);
-}
-.d-bloc .divider-h span{
-	border-color:rgba(255,255,255,.2);
-}
-.d-bloc .a-btn,.d-bloc .navbar a, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
-	color:rgba(255,255,255,.6);
-}
-.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
-	color:rgba(255,255,255,1);
-}
-.d-bloc .navbar-toggle .icon-bar{
-	background:rgba(255,255,255,1);
-}
-.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
-	color:rgba(255,255,255,1);
-	border-color:rgba(255,255,255,1);
-}
-.d-bloc .card{
-	color:rgba(0,0,0,.5);
-}
-.d-bloc .card button:hover{
-	color:rgba(0,0,0,.7);
-}
-.d-bloc .card icon{
-	border-color:rgba(0,0,0,.7);
-}
-.d-bloc .card .divider-h span{
-	border-color:rgba(0,0,0,.1);
-}
-.d-bloc .card .a-btn{
-	color:rgba(0,0,0,.6);
-}
-.d-bloc .card .a-btn:hover{
-	color:rgba(0,0,0,1);
-}
-.d-bloc .card .btn-wire, .d-bloc .card .btn-wire:hover{
-	color:rgba(0,0,0,.7);
-	border-color:rgba(0,0,0,.3);
-}
-
-
 /* Light theme */
 
 .d-bloc .card,.l-bloc{
@@ -866,10 +815,11 @@ h3{
 	float:left;
 }
 .container-div-bloc-6-style{
-	height:21px;
+	height:20px;
 }
 .p-style{
 	line-height:0px;
+	text-indent:px;
 }
 .icn{
 	float:left;
@@ -1119,15 +1069,6 @@ h3{
 .column-no-pad{
 	margin:0px 0px 0px 0px;
 	padding:0px 0px 0px 0px;
-}
-.prev-lightbox, .next-lightbox{
-	color:#FEFFFE!important;
-	background-color:#000000;
-	font-size:14px;
-	width:35px;
-	height:35px;
-	text-align:center;
-	border-radius:20px 20px 20px 20px;
 }
 .close-special-menu .close-icon{
 	color:#FEFFFE!important;
@@ -1614,6 +1555,56 @@ a{
 	border-color:#000000!important;
 	border-width:1px 1px 1px 1px;
 }
+.container-div-0-style{
+	height:104px;
+}
+.p-bloc-6-style{
+	letter-spacing:px;
+	text-indent:px;
+}
+.prev-lightbox, .next-lightbox{
+	color:#000000!important;
+	background-color:#FEFFFE;
+	box-shadow:0px 0px 0px rgba(0,0,0,0.70);
+}
+.first-bloc{
+	padding-top:20px;
+}
+.image-navbar{
+	border-style:solid;
+	border-color:#E5E5E5!important;
+	text-shadow:0px 0px 0px #000000;
+	box-shadow:0px 0px 5px #E5E5E5;
+	min-width:270px;
+	max-width:270px;
+	margin-right:5px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:5px 5px 5px 5px;
+	border-radius:50em 50em 50em 50em;
+	border-width:1px 1px 1px 1px;
+}
+.image-navbar-img{
+	width:50px;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+.image-navbar-btn{
+	font-size:14px;
+	background-color:transparent;
+	border-style:none;
+	color:#000000!important;
+	text-align:left;
+	width:200px;
+	margin:0px 0px 0px 0px;
+	padding:10px 10px 10px 10px;
+}
+.image-navbar-btn:hover{
+	background-color:transparent;
+}
+.image-navbar-img:hover{
+	float:none;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -1632,6 +1623,15 @@ a{
 .wire-btn-bleu-de-france{
 	color:#4486F3!important;
 	border-color:#4486F3!important;
+}
+
+/* Link colour styles */
+
+.ltc-bleu-de-france{
+	color:#4486F3!important;
+}
+.ltc-bleu-de-france:hover{
+	color:#366bc2!important;
 }
 
 /* Icon colour styles */
@@ -1761,6 +1761,22 @@ a{
 	.video{
 		background-color:transparent;
 	}
+	.image-navbar{
+		max-width:200px;
+		min-width:200px;
+		min-height:50px;
+		max-height:50px;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	.image-navbar-btn{
+		width:120px;
+		margin:0px 0px 0px 10px;
+		padding:0px 0px 0px 0px;
+	}
+	.image-navbar-img{
+		width:40px;
+	}
 	
 	/* MD Text Margin Offsets */
 	.mg-sm-md{
@@ -1874,6 +1890,29 @@ a{
 	.heading2-link-video{
 		font-size:16px;
 		color:#1A0CAA!important;
+	}
+	.image-navbar{
+		min-width:180px;
+		max-width:180px;
+		height:50px;
+		margin-top:10px;
+		margin-bottom:40px;
+		padding:5px 5px 5px 5px;
+	}
+	.image-navbar-btn{
+		font-size:12px;
+		height:24px;
+		margin-top:-10px;
+		width:100px;
+		padding:0px 0px 0px 0px;
+	}
+	.image-navbar-img{
+		margin:0px 0px 0px 0px;
+		padding:0px 0px 0px 0px;
+	}
+	.btn-style{
+		padding-top:6px;
+		padding-bottom:6px;
 	}
 	
 	/* Small Text Margin Offsets */
@@ -2033,6 +2072,35 @@ a{
 	}
 	.heading2-link-video:hover{
 		;
+	}
+	.image-navbar{
+		min-width:80px;
+		max-width:80px;
+		max-height:80px;
+		margin-bottom:80px;
+		min-height:80px;
+		margin-left:5px;
+		margin-top:10px;
+		padding:5px 5px 5px 5px;
+	}
+	.image-navbar-btn{
+		text-align:center;
+		width:100%;
+		margin:10px 0px 0px 0px;
+		padding:0px 0px 0px 0px;
+	}
+	.image-navbar-img{
+		min-height:68px;
+		max-width:70px;
+		max-height:70px;
+		min-width:68px;
+		margin:0px 0px 0px 0px;
+	}
+	.btn-style{
+		padding-right:0px;
+		padding-bottom:0px;
+		padding-left:0px;
+		width:100%;
 	}
 	
 	/* Mobile Text Margin Offsets */
