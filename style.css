@@ -35,7 +35,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 @font-face {
-	font-family:'ArialMT';
+	font-family:'arialbold_italic';
 	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf');
 	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf') format('truetype');
 	font-weight: normal;
