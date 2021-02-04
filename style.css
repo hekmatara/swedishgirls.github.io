@@ -34,6 +34,23 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-style: normal;
 }
 
+@font-face {
+	font-family:'ArialMT';
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf');
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'arialbold_italic';
+    src: url('./fonts/ArialMT/arial_bold_italic-webfont.woff2') format('woff2'),
+         url('./fonts/ArialMT/arial_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /* = Blocs
 -------------------------------------------------------------- */
 
@@ -1231,7 +1248,7 @@ h3{
 	padding:0px 0px 0px 0px;
 }
 .footer-border{
-	border-color:#E5E5E5!important;
+	border-color:hsl(0, 0%, 90%)!important;
 	border-style:solid;
 	border-width:1px 1px 1px 1px;
 }
