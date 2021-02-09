@@ -9,14 +9,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="description" content="This experience symbolizes travelling at a time when travelling is not a matter of course. with the help of associations, they resurface memories to bring a sense of recognition. the familiar shapes and materials create a feeling, whatever feeling that might be is up to the individual's associations. ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?5110">
-	<link rel="stylesheet" type="text/css" href="style.css?7222">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?9927">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?4759">
+	<link rel="stylesheet" type="text/css" href="style.css?3297">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?1749">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/ionicons.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/feather.min.css">
 	
     <title>Visit Swedish Girls</title>
@@ -29,6 +30,23 @@
 <meta name="theme-color" content="#ffffff">
 
 <style>
+
+
+@font-face {
+	font-family:'arialbold_italic';
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf');
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'arialbold_italic';
+    src: url('./fonts/ArialMT/arial_bold_italic-webfont.woff2') format('woff2'),
+         url('./fonts/ArialMT/arial_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 html {
@@ -216,10 +234,66 @@ html {
 
 <style>
 
+ .background-visit {
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	min-height: 100vh;
+ 	
+ }
 
 
 
- #alert-solstol { position:absolute; z-index:11; }
+ .visit-video-top #visit-info {
+ 	border: none;
+ 	margin-bottom: -1px;
+ 	padding: none;
+ }
+ 
+   .div-visit-intro {
+  	  position: absolute;
+ 	  top: 90vh;
+ 	  left: 0;
+ 	  z-index: 999;
+ 	
+  }
+  
+
+  
+  @media only screen and (max-width: 1000px) {
+  .icon-test {
+   font-size: 40px!important;
+  }
+  }
+ 
+ .card-visit-intro {
+ 	padding-top: 10px;
+ 	background: white;
+ 	
+ }
+
+
+ .forsta-marquee1 {
+ 	padding-left: 15%;
+ 	font-size: 40px;
+ 	color: black;
+ 	font-family: 'arialbold_italic'; 
+ 	
+ 	text-align: center;
+ 	overflow: hidden;
+    
+ }
+  .forsta-marquee2 {
+  	padding-right: 15%;
+  	margin-bottom: 100px;
+ 	font-size: 40px;
+ 	color: black;
+ 	font-family: 'arialbold_italic';  
+ 	white-space: nowrap;
+ 	text-align: center;
+ 	overflow: hidden;
+    
+ }
 
  #mydiv11 {left:20px; position:absolute; z-index:9; cursor:grab; top:190px;}
  #mydiv12 {left:20px; position:absolute; z-index:9; cursor:grab; top:180px;}
@@ -255,7 +329,7 @@ html {
  
  @media only screen and (max-width: 1000px) {
   .pic {
- 	width: 80px;
+ 	width: 150px;
  }
  }
 
@@ -277,7 +351,6 @@ html {
 
 #mydiv {
   position: absolute;
-  z-index: 9;
   background-color: transparent;
   text-align: right;
 }
@@ -285,7 +358,6 @@ html {
 #mydivheader {
   padding: 10px;
   cursor: grab;
-  z-index: 10;
   background-color: transparent;
 }
 
@@ -304,121 +376,59 @@ html {
   background-color: transparent;
 }
 
+ .image-stack {
+ 	width: 300px;
+ }
+ 
+ @media only screen and (max-width: 1000px){
+  .image-stack {
+ 	width: 200px;
+ }
+ }
+ 
+ 
 
 
-   .marquee {
-   	
-            height: 50px;
-            overflow: hidden;
-            position: relative;
-        
-        }
-        
-        .marquee p {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            font-size: 4vw;
-	font-family: Arial bold italic;
-	color: black;
-            line-height: 50px;
-            text-align: center;
-            -moz-transform: translateX(100%);
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-            -moz-animation: scroll-left 2s linear 1;
-            -webkit-animation: scroll-left 2s linear 1;
-            animation: scroll-left 20s linear 1;
-        }
-        
-        @-moz-keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-            }
-        }
-        
-        @-webkit-keyframes scroll-left {
-            0% {
-                -webkit-transform: translateX(100%);
-            }
-            100% {
-                -webkit-transform: translateX(-100%);
-            }
-        }
-        
-        @keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-                -webkit-transform: translateX(100%);
-                transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-                -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
-            }
-        }
+#mydiv40       {position: absolute; background-color: transparent;}
+#mydivheader40 {position: absolute; left: 7vw; top: 170px; cursor: grab;background-color: transparent;}
 
-   .marquee2 {
-   	
-            height: 50px;
-            overflow: hidden;
-            position: relative;
-        
-        }
-        
-        .marquee2 p {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            font-size: 4vw;
-	font-family: Arial bold italic;
-	color: black;
-            line-height: 50px;
-            text-align: center;
-            -moz-transform: translateX(100%);
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-            -moz-animation: scroll-left 2s linear 1;
-            -webkit-animation: scroll-left 2s linear 1;
-            animation: scroll-left 20s linear 1;
-        }
-        
-        @-moz-keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-            }
-        }
-        
-        @-webkit-keyframes scroll-left {
-            0% {
-                -webkit-transform: translateX(100%);
-            }
-            100% {
-                -webkit-transform: translateX(-100%);
-            }
-        }
-        
-        @keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-                -webkit-transform: translateX(100%);
-                transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-                -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
-            }
-        }
+#mydiv41       {position: absolute; background-color: transparent; z-index:10;}
+#mydivheader41 {position: absolute; left: -27vw; top: 200px; cursor: grab;background-color: transparent; }
+
+#mydiv42       {position: absolute; background-color: transparent; }
+#mydivheader42 {position: absolute; left: -14vw; top: 0px; cursor: grab;background-color: transparent;}
+
+#mydiv43       {position: absolute; background-color: transparent; z-index:9;}
+#mydivheader43 {position: absolute; left: -17vw; top: 130px; cursor: grab;background-color: transparent; }
+
+#mydiv44       {position: absolute; background-color: transparent;}
+#mydivheader44 {position: absolute; left: -37vw; top: 70px; cursor: grab;background-color: transparent;}
+
+#mydiv45       {position: absolute; background-color: transparent; z-index: 0;}
+#mydivheader45 {position: absolute; left: 0vw; top: 100px; cursor: grab;background-color: transparent;}
+
+  .video-stack {
+ 	width: 300px;
+ }
+ 
+   #video-skiss {
+   	display: flex;
+   	flex-direction: row;
+   	justify-content: center;
+   	position: relative;
+ 
+ }
+ 
+ @media only screen and (max-width: 1000px){
+  .video-stack {
+ 	width: 150px;
+ }
+ }
+ 
+ #drag-skisser {
+ 	padding-top: 200px;
+ }
+ 
 
 
 </style>
@@ -434,80 +444,89 @@ html {
 <!-- Main container -->
 <div class="page-container">
     
-<!-- navbar -->
-<div class="bloc full-width-bloc row-1-style bgc-white l-bloc" id="navbar">
-	<div class="container ">
+<!-- bloc-19 -->
+<div class="bloc bg-bakgrund-strand background-visit bloc-fill-screen l-bloc" id="bloc-19">
+	<div class="container">
 		<div class="row">
-			<div class="col-lg-1 col-md-1">
-				<h1 class="text-sm-center text-center float-lg-none h1-style text-lg-left text-md-left">
-					<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
-				</h1>
-			</div>
-			<div class="left-padding-col col-lg-6 col-md-8">
-				<div class=" input-style">
-					<p><span class="ref"></span></p>
-					
-				</div>
-			</div>
-			<div class="left-padding-col offset-lg-1 offset-md-1 test-delete col-lg-5 col-md-7">
-					<nav class="navbar navbar-light row nav-invert bar-nav navbar-expand-md" role="navigation">
-						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 toggle-button" data-toggle="collapse" data-target=".navbar-22859" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse navbar-22859  fullscreen-nav open-left col-lg-12">
-							<ul class="site-navigation nav navbar-nav menu-nav">
-								<li class="nav-item">
-									<a href="swedish-girls.html" class="nav-link">All</a>
-								</li>
-								<li class="nav-item">
-									<a href="images.html" class="nav-link">Images</a>
-								</li>
-								<li class="nav-item">
-									<a href="videos.html" class="nav-link">Videos</a>
-								</li>
-								<li class="nav-item">
-									<a href="maps.html" class="nav-link">Maps</a>
-								</li>
-								<li class="nav-item">
-									<a href="news.html" class="nav-link">News</a>
-								</li>
-								<li class="nav-item">
-									<a href="shopping.html" class="nav-link">Shopping</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
 			<div class="col">
-					<div class="btn-group btn-dropdown float-lg-none">
-						<a href="#" class="btn dropdown-toggle  btn-d btn-sm dropdown-style btn-style-none d-md-inline-block  d-none" data-toggle="dropdown" aria-expanded="false">Projects</a>
-						<ul class="dropdown-menu" role="menu">
-							<li>
-								<a href="visit-swedish-girls.html" class="a-btn nav-link">Visit Swedish Girls</a>
-							</li>
-							<li class="nav-item">
-								<a href="experience-swedish-girls.html" class="nav-link a-btn">Experience Swedish Girls</a>
-							</li>
-							<li class="nav-item">
-								<a href="served-by-swedish-girls.html" class="nav-link a-btn">Served by Swedish Girls</a>
-							</li>
-							<li>
-								<a href="index.html" class="a-btn nav-link">Workshop</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+			</div>
 		</div>
 	</div>
 </div>
-<!-- navbar END -->
+<!-- bloc-19 END -->
 
-<!-- bloc-23 -->
-<div class="bloc full-width-bloc animSpeed10 bg-bakgrund d-md-flex  d-none l-bloc" id="bloc-23">
+<!-- visit-info -->
+<div class="bloc b-parallax full-width-bloc l-bloc" id="visit-info">
 	<div class="container ">
-		<div class="row no-gutters animated fadeIn animSpeedSlow" data-appear-anim-style="fadeIn">
-			<div class="col">
-				<div class="embed-responsive embed-responsive-16by9">
+		<div class="row no-gutters">
+			<div class="div-visit-intro col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-10 offset-1">
+				<div class="card border-0 card-rd card-visit-intro animated fadeIn animSpeedSlow" id="card-intro" data-appear-anim-style="fadeIn">
+					<div class="card-body visit-card-body">
+						<div class="row no-gutters">
+							<div class="align-self-center col-md-10 col-sm-10 col-lg-10 col-9">
+								<h1 class="h2-style tc-black float-lg-none text-lg-left float-none text-left mg-md">
+									Visit Swedish Girls, 2021<br>
+								</h1>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-2">
+								<div class="text-lg-right text-md-right text-sm-right text-right">
+									<span class="ion ion-information-circled icon-black icon-test info-icn icon-lg float-lg-right float-md-right float-sm-right float-right"></span>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-2 align-self-end col-lg-2">
+								<div class="text-center">
+									<span class="feather-icon icon-arrow-down icon-black icon-test icon-lg arrow-icn"></span>
+								</div>
+								<div class="text-lg-center text-center">
+									<span class="feather-icon icon-arrow-down icon-black icon-test icon-lg arrow-icn"></span>
+								</div>
+								<div class="text-lg-center text-center">
+									<span class="feather-icon icon-arrow-down icon-black icon-test icon-lg arrow-icn"></span>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-10">
+								<p class="float-lg-right visit-intro-text text-lg-left">
+									<span class="visit-subhead">IN THEIR PROCESS</span><br> Swedish Girls compress their ideas through a layer of inspiration and discussion that leads to a distorted reality. <br><br><span class="visit-subhead">THIS EXPERIENCE</span><br>symbolizes travelling at a time when travelling is not a matter of course. With the help of associations, they resurface memories to bring a sense of recognition. The familiar shapes and materials create a feeling, whatever feeling that might be is up to the individual's associations. <br><br><span class="visit-subhead">JOIN THEM</span><br>on their way to this project&rsquo;s final destination.<br>
+								</p>
+							</div>
+							<div class="col-12 align-self-center">
+								<div class="text-center container-div-visit-info-style">
+									<a href="#" data-toggle-visibility="visit-info,visit-info-extra"><span class="feather-icon icon-cross icon-black cross-icn icon-lg"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- visit-info END -->
+
+<!-- animation-intro-1 -->
+<div class="bloc full-width-bloc d-lg-none d-xl-none d-flex l-bloc" id="animation-intro-1">
+	<div class="container bloc-sm">
+		<div class="row no-gutters">
+			<div class="col-sm-12">
+				<div class="div-video">
+					<div class="embed-responsive video embed-responsive-9by16 animated fadeIn animSpeedSlow" data-appear-anim-style="fadeIn">
+						<video class="embed-responsive-item lazyload" autoplay="autoplay" loop="loop" muted="true" data-src="vid/stol-mobile.mp4">
+							
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- animation-intro-1 END -->
+
+<!-- animation-intro-2 -->
+<div class="bloc full-width-bloc animSpeed10 visit-video-top d-lg-flex   d-none l-bloc" id="animation-intro-2">
+	<div class="container ">
+		<div class="row no-gutters animSpeedSlow">
+			<div class="col-lg-12">
+				<div class="embed-responsive embed-responsive-16by9 animated fadeIn animSpeedSlow" data-appear-anim-style="fadeIn">
 					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" data-src="vid/%20stol.mp4">
 						Your browser does not support HTML5 video.
 					</video>
@@ -516,74 +535,10 @@ html {
 		</div>
 	</div>
 </div>
-<!-- bloc-23 END -->
+<!-- animation-intro-2 END -->
 
-<!-- bloc-23 -->
-<div class="bloc bg-bakgrund b-parallax bloc-fill-screen l-bloc" id="bloc-23">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 offset-lg-1">
-				<div class="embed-responsive embed-responsive-4by4">
-					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" muted="true" data-src="vid/Scen%20med%20kropp_1_animation.mp4">
-						<source src="img/lazyload-ph.png" data-src="vid/Scen%20med%20kropp_1_animation.mp4" type="video/mp4" />
-					</video>
-				</div>
-			</div>
-			<div class="col">
-				<div class="embed-responsive embed-responsive-9by16">
-					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" data-src="vid/movie_light3.mp4">
-						
-					</video>
-				</div>
-			</div>
-			<div class="col">
-				<div class="embed-responsive embed-responsive-9by16">
-					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" data-src="vid/movie_light3.mp4">
-						
-					</video>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-23 END -->
-
-<!-- bloc-23 -->
-<div class="bloc b-parallax bg-bakgrund full-screen-bloc l-bloc" id="bloc-23">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-lg-1 col-md-1 col-sm-1 col-1 offset-3">
-				<div >
-					<!-- Draggable DIV -->
-<div id="mydiv">
-  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-  <div id="mydivheader">
-   <img src="img/lazyload-ph.png" data-src="img/1_FORST_Mingel_Swedish_Girls_Release-55-2.jpg" width="300" height="auto" class="lazyload">
-  </div>
-
-</div>
-					
-				</div>
-				<div >
-						<!-- Draggable DIV -->
-<div id="mydiv2">
-  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-  <div id="mydivheader2">
-   <img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-53.jpg" width="300" height="auto" class="lazyload">
-   
-  </div>
-
-</div>
-						
-					</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-23 END -->
-
-<!-- bloc-spel -->
-<div class="bloc b-parallax none bloc-fill-screen bg-bakgrund full-width-bloc full-screen-bloc l-bloc" id="bloc-spel">
+<!-- visit-info-extra -->
+<div class="bloc b-parallax bloc-fill-screen l-bloc" id="visit-info-extra">
 	<div class="container fill-bloc-top-edge">
 		<div class="row">
 			<div class="col-12">
@@ -591,19 +546,214 @@ html {
 		</div>
 	</div>
 	<div class="container">
-		<div class="row no-gutters">
-			<div class="col-lg-12">
-				<div class=" marquee-solstol wow">
-					<div class="marquee">
+		<div class="row">
+			<div class="col">
+			</div>
+		</div>
+	</div>
+	<div class="container fill-bloc-bottom-edge">
+		<div class="row">
+			<div class="col-12">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- visit-info-extra END -->
 
-    <p>GET THE BEST SPOT ON THE BEACH — GET THE BEST SPOT ON THE BEACH </p>
-    </div>
+<!-- q-feels-like -->
+<div class="bloc b-parallax l-bloc" id="q-feels-like">
+	<div class="container bloc-xxl">
+		<div class="row">
+			<div class="offset-lg-3 col-lg-6 col-md-8 offset-md-2">
+				<img src="img/lazyload-ph.png" data-src="img/Untitled-3.gif" class="img-fluid mx-auto d-block mg-md lazyload" alt="quote1 1" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- q-feels-like END -->
+
+<!-- drag-skisser -->
+<div class="bloc b-parallax full-screen-bloc d-lg-flex   d-none l-bloc" id="drag-skisser">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-md-12 col-lg-12 col-sm-12 col-12">
+				<div >
+					<!-- Draggable DIV --><b>
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  
+</b><div id="video-skiss"><b>
+
+<div id="mydiv44">
+  <div id="mydivheader44">
+   <b><img src="img/lazyload-ph.png" data-src="vid/movie_light2.mp4" class="video-stack lazyload">
+  </b></div>
+</div>
+
+<div id="mydiv41">
+  <div id="mydivheader41">
+   <b><img src="img/lazyload-ph.png" data-src="vid/process_2.mp4" class="video-stack lazyload">
+  </b></div>
+</div>
+
+
+
+<div id="mydiv43">
+  <div id="mydivheader43">
+   <b><img src="img/lazyload-ph.png" data-src="vid/movie_light1.mp4" class="video-stack lazyload">
+  </b></div>
+</div>
+
+<div id="mydiv42">
+  <div id="mydivheader42">
+   <b><img src="img/lazyload-ph.png" data-src="vid/process_3.mp4" class="video-stack lazyload">
+  </b></div>
+</div>
+
+</b><div id="mydiv40">
+  <div id="mydivheader40">
+   <b><img src="img/lazyload-ph.png" data-src="vid/process_1.mp4" class="video-stack lazyload">
+  </b></div>
+</div>
+
+
+
+<div id="mydiv45">
+  <div id="mydivheader45">
+   <b><img src="img/lazyload-ph.png" data-src="vid/movie_light3.mp4" class="video-stack lazyload"></b>
+  </div>
+</div>
+
+</div>
 					
 				</div>
-				<div class=" marquee-solstol">
-						<div class="marquee2">
-    <p>GRAB A CHAIR</p>
-    </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- drag-skisser END -->
+
+<!-- bloc-26 -->
+<div class="bloc d-lg-none d-xl-none d-flex l-bloc" id="bloc-26">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-6 visit-video-pad">
+				<div class="embed-responsive embed-responsive-9by16">
+					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" muted="true" playsinline="true" data-src="vid/movie_light1.mp4">
+						
+					</video>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-6">
+				<div class="embed-responsive embed-responsive-9by16">
+					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" muted="true" playsinline="true" data-src="vid/process_3.mp4">
+						
+					</video>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-6 visit-video-pad">
+				<div class="embed-responsive embed-responsive-9by16">
+					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" muted="true" playsinline="true" data-src="vid/movie_light2.mp4">
+						
+					</video>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-6">
+				<div class="embed-responsive embed-responsive-9by16">
+					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" muted="true" playsinline="true" data-src="vid/process_2.mp4">
+						
+					</video>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-6 visit-video-pad">
+				<div class="embed-responsive embed-responsive-9by16">
+					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" muted="true" playsinline="true" data-src="vid/movie_light3.mp4">
+						
+					</video>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-6">
+				<div class="embed-responsive embed-responsive-9by16">
+					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" muted="true" playsinline="true" data-src="vid/process_1.mp4">
+						
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-26 END -->
+
+<!-- q-remember -->
+<div class="bloc b-parallax l-bloc" id="q-remember">
+	<div class="container bloc-xxl">
+		<div class="row">
+			<div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8">
+				<img src="img/lazyload-ph.png" data-src="img/remember.gif" class="img-fluid mx-auto d-block mg-md lazyload" alt="quote1 1" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- q-remember END -->
+
+<!-- animationer -->
+<div class="bloc b-parallax l-bloc" id="animationer">
+	<div class="container bloc-xxl">
+		<div class="row">
+			<div class="col-12 col-lg-6 col-md-6">
+				<div class="embed-responsive embed-responsive-4by4 v-pad-v">
+					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" muted="true" playsinline="true" data-src="vid/scen%20med%20kropp.mp4">
+						
+					</video>
+				</div>
+			</div>
+			<div class="col">
+				<div class="embed-responsive embed-responsive-4by4">
+					<video class="embed-responsive-item lazyload" loop="loop" autoplay="autoplay" muted="true" playsinline="true" data-src="vid/scen_4_skelette%20animation0001-0250.mp4">
+						
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- animationer END -->
+
+<!-- drag-solstolar -->
+<div class="bloc none full-width-bloc b-parallax full-screen-bloc-copy-1 l-bloc" id="drag-solstolar">
+	<div class="container bloc-md">
+		<div class="row no-gutters">
+			<div class="col animSpeedSlow">
+				<div class=" animSpeedSlow d-lg-block   d-none">
+					<div class="forsta-marquee1">
+
+  <div class="wow fadeIn" data-wow-duration="4s" data-wow-delay="0.1s">
+  <div class="wow pulse" data-wow-duration="2s" data-wow-delay="0.5s">
+  <div class="wow slideOutLeft" data-wow-duration="20s" data-wow-delay="0s">
+  <div class="wow fadeOut" data-wow-duration="2s" data-wow-delay="7s">
+
+  
+    GET THE BEST SPOT ON THE BEACH
+ 
+ </div>
+</div>
+</div>
+</div>
+</div>
+					
+				</div>
+				<div class=" animated fadeIn animSpeedSlow d-lg-block   d-none" data-appear-anim-style="fadeIn">
+						<div class="forsta-marquee2">
+
+  <div class="wow fadeIn" data-wow-duration="4s">
+  <div class="wow pulse" data-wow-duration="2s" data-wow-delay="0.5s">
+  <div class="wow slideOutRight" data-wow-duration="20s" data-wow-delay="0s">
+  <div class="wow fadeOut" data-wow-duration="2s" data-wow-delay="7s">
+    GRAB A CHAIR
+  </div>
+ </div>
+</div>
+</div>
+</div>
 						
 					</div>
 			</div>
@@ -703,10 +853,53 @@ html {
 		</div>
 	</div>
 </div>
-<!-- bloc-spel END -->
+<!-- drag-solstolar END -->
 
-<!-- bloc-27 -->
-<div class="bloc bg-bakgrund b-parallax l-bloc" id="bloc-27">
+<!-- drag-tshirts -->
+<div class="bloc b-parallax full-screen-bloc object-hidden l-bloc" id="drag-tshirts">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-lg-1 col-sm-1 col-1 col-md-12">
+				<div >
+					<!-- Draggable DIV -->
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  
+<div id="mydiv">
+  <div id="mydivheader">
+   <img src="img/lazyload-ph.png" data-src="img/1_FORST_Mingel_Swedish_Girls_Release-55-2.jpg" class="image-stack lazyload">
+  </div>
+</div>
+
+<div id="mydiv2">
+  <div id="mydivheader2">
+   <img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-53.jpg" class="image-stack lazyload">
+  </div>
+</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- drag-tshirts END -->
+
+<!-- bloc-31 -->
+<div class="bloc l-bloc" id="bloc-31">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-md-2 col-lg-10 offset-lg-1">
+				<a href="shopping.html"><img class="img-fluid image-stack-link lazyload" src="img/lazyload-ph.png" data-src="img/shopping-stack.png" alt="shopping stack" /></a>
+				<h3 class="text-lg-center mg-clear h3-style tc-black ">
+					I had to google Swedish Girls to get you this t-shirt
+				</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-31 END -->
+
+<!-- souvenirer -->
+<div class="bloc b-parallax l-bloc" id="souvenirer">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-md-6 col-lg-2 offset-lg-3">
@@ -724,48 +917,49 @@ html {
 		</div>
 	</div>
 </div>
-<!-- bloc-27 END -->
+<!-- souvenirer END -->
 
-<!-- bloc-27 -->
-<div class="bloc l-bloc" id="bloc-27">
-	<div class="container bloc-lg">
+<!-- footer -->
+<div class="bloc bgc-white-2 l-bloc" id="footer">
+	<div class="container bloc-md">
 		<div class="row">
-			<div class="col-lg-6 d-flex offset-lg-2">
+			<div class="d-flex offset-lg-2 col-lg-8">
 				<div class="div-delete2">
 					<a href="swedish-girls.html" class="btn btn-d btn-sq btn-xl button-blue float-lg-none"><span class="fa fa-angle-left icon-spacer icon-md icon-bleu-de-france button-blue2"></span>Home</a>
-					<h1 class="text-md-center text-sm-center text-center bottom-logo text-lg-center float-lg-none">
+					<h2 class="text-md-center text-sm-center text-center bottom-logo text-lg-center float-lg-none">
 						<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
-					</h1>
+					</h2>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-27 END -->
+<!-- footer END -->
 
 <!-- bloc-28 -->
-<div class="bloc bgc-anti-flash-white footer-border l-bloc" id="bloc-28">
-	<div class="container bloc-sm">
+<div class="bloc bgc-anti-flash-white footer-border full-width-bloc l-bloc" id="bloc-28">
+	<div class="container ">
 		<div class="row">
-			<div class="col-lg-12">
-				<p class="text-lg-center opacity-span">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-11 col offset-md-1">
+				<p class="text-sm-center text-center text-lg-left p-style mg-sm text-md-left">
 					Swedish Girls &nbsp;- From your Internet address -&nbsp;<a class="ltc-bleu-de-france" href="maps.html">Learn more</a>
 				</p>
 			</div>
-			<div class="col">
-				<div class="footer-div-center text-lg-center">
-					<ul class="list-horizontal-layout list-unstyled">
-						<li>
-							<a href="swedish-girls.html" class="a-btn a-block opacity-span">mail@swedishgirls.org</a>
-						</li>
-						<li>
-							<a href="swedish-girls.html" class="a-btn opacity-span a-block">Katrinebergsbacken 6</a>
-						</li>
-						<li>
-							<a href="swedish-girls.html" class="a-btn a-block opacity-span">117 61 Stockholm</a>
-						</li>
-					</ul>
+			<div class="col-lg-12">
+				<div class="divider-h divider-bloc-28-padding">
+					<span class="divider"></span>
 				</div>
+			</div>
+			<div class="left-padding-col col-lg-11 offset-lg-1 offset-md-1 col" id="footer-col-3">
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					mail@swedishgirls.org
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					Katrinebergsbacken 6
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-lg-sm text-md-left">
+					117 61 Stockholm
+				</p>
 			</div>
 		</div>
 	</div>
@@ -776,18 +970,47 @@ html {
 <!-- Main container END -->
     
 
-<script src="./js/jquery-3.3.1.min.js?1343"></script>
-<script src="./js/bootstrap.bundle.min.js?9856"></script>
-<script src="./js/blocs.min.js?1133"></script>
+<script src="./js/jquery-3.3.1.min.js?3660"></script>
+<script src="./js/bootstrap.bundle.min.js?5528"></script>
+<script src="./js/blocs.min.js?8891"></script>
 <script src="./js/lazysizes.min.js" defer></script>
 <!-- Additional JS END -->
 <style>
 
- .footer-div-center {
- 	display: flex;
- 	justify-content: center;
- 	font-size: 14px;
+
+ 
+ 
+  .footer-list {
+
+ 	
  }
+ 
+ @media only screen and (max-width: 1000px) {
+  #footer-col-3 {
+ 
+ 	
+ }
+ }
+ 
+   .opacity-span {
+   	display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-left: 0;
+ 	font-size: 14px;
+ 	
+ }
+ 
+ @media only screen and (max-width: 770px) {
+  .opacity-span {
+  	display: block;
+
+    
+ 	
+ }
+ }
+ 
  	
  	
  	</style>
@@ -817,6 +1040,13 @@ dragElement(document.getElementById("mydiv27"));
 dragElement(document.getElementById("mydiv28"));
 dragElement(document.getElementById("mydiv29"));
 dragElement(document.getElementById("mydiv30"));
+
+dragElement(document.getElementById("mydiv40"));
+dragElement(document.getElementById("mydiv41"));
+dragElement(document.getElementById("mydiv42"));
+dragElement(document.getElementById("mydiv43"));
+dragElement(document.getElementById("mydiv44"));
+dragElement(document.getElementById("mydiv45"));
 
 
 function dragElement(elmnt) {
@@ -860,7 +1090,19 @@ function dragElement(elmnt) {
   }
 }
 
-new WOW().init();
+new WOW(
+	{
+		mobile: true,
+	}
+	
+)
+.init();
+
+       
+
+                    
+
+                   
 
 
 
