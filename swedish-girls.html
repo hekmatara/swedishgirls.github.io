@@ -2,15 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="konstnärskollektiv, designkollektiv, stockholm, konst, design">
+    <meta name="description" content="An art- and design collective based in Stockholm. Together, the emerging artists Matilda Ellow, Julia Jondell, Mira Bergh and Josefin Zachrisson form Swedish Girls.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?6344">
-	<link rel="stylesheet" type="text/css" href="style.css?1444">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?1889">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?9704">
+	<link rel="stylesheet" type="text/css" href="style.css?7524">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?361">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/ionicons.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/feather.min.css">
 	
     <title>Swedish Girls</title>
@@ -23,6 +24,23 @@
 <meta name="theme-color" content="#ffffff">
 
 <style>
+
+
+@font-face {
+	font-family:'arialbold_italic';
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf');
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'arialbold_italic';
+    src: url('./fonts/ArialMT/arial_bold_italic-webfont.woff2') format('woff2'),
+         url('./fonts/ArialMT/arial_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 html {
@@ -221,6 +239,10 @@ html {
  .ref::before {
   content: "all";
 }
+
+ #footer {
+ 	display: none;
+ }
  
  
  </style>
@@ -235,13 +257,13 @@ html {
 <div class="page-container">
     
 <!-- navbar -->
-<div class="bloc full-width-bloc row-1-style bgc-white l-bloc" id="navbar">
+<div class="bloc full-width-bloc row-1-style bgc-white visit-video-top l-bloc" id="navbar">
 	<div class="container ">
 		<div class="row">
 			<div class="col-lg-1 col-md-1">
-				<h1 class="text-sm-center text-center float-lg-none h1-style text-lg-left text-md-left">
+				<p class="text-center float-lg-none h1-style text-lg-left text-md-left text-sm-center">
 					<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
-				</h1>
+				</p>
 			</div>
 			<div class="left-padding-col col-lg-6 col-md-8">
 				<div class=" input-style">
@@ -257,21 +279,21 @@ html {
 						<div class="collapse navbar-collapse navbar-22859  fullscreen-nav open-left col-lg-12">
 							<ul class="site-navigation nav navbar-nav menu-nav">
 								<li class="nav-item">
-									<a href="swedish-girls.html" class="nav-link">All</a>
+									<a href="swedish-girls.html" class="nav-link a-btn">All</a>
 								</li>
-								<li class="nav-item">
+								<li class="nav-item listitem-images">
 									<a href="images.html" class="nav-link">Images</a>
 								</li>
-								<li class="nav-item">
+								<li class="nav-item listitem-vid">
 									<a href="videos.html" class="nav-link">Videos</a>
 								</li>
-								<li class="nav-item">
+								<li class="nav-item listitem-maps">
 									<a href="maps.html" class="nav-link">Maps</a>
 								</li>
-								<li class="nav-item">
+								<li class="nav-item listitem-news">
 									<a href="news.html" class="nav-link">News</a>
 								</li>
-								<li class="nav-item">
+								<li class="nav-item listitem-shopping">
 									<a href="shopping.html" class="nav-link">Shopping</a>
 								</li>
 							</ul>
@@ -290,9 +312,6 @@ html {
 							</li>
 							<li class="nav-item">
 								<a href="served-by-swedish-girls.html" class="nav-link a-btn">Served by Swedish Girls</a>
-							</li>
-							<li>
-								<a href="index.html" class="a-btn nav-link">Workshop</a>
 							</li>
 						</ul>
 					</div>
@@ -375,20 +394,13 @@ html {
 				<div>
 					<div class="container-div-style">
 					</div>
-					<p class="mg-sm search-path">
-						www.swedishgirls.org › projects › workshop
-					</p>
-					<h2 class="heading2-link mg-sm">
-						<a class="heading2-link" href="index.html">Workshop</a><br>
-					</h2>
-					<p class="mg-clear p-info">
-						The Museum is temporarily closed until further notice due to the pandemic.<br>
-					</p>
 				</div>
 				<div class="container-div-bloc-2-style">
 					<div class="divider-h">
 						<span class="divider"></span>
 					</div>
+				</div>
+				<div class="container-div-0-bloc-2-style">
 				</div>
 			</div>
 			<div class="right-padding-col offset-lg-0 col-md-5 col-lg-5">
@@ -396,14 +408,14 @@ html {
 					<div class="card-header card">
 						<div class="row no-gutters">
 							<div class="col">
-								<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block img-top-radius lazyload" alt="placeholder image" />
+								<img src="img/lazyload-ph.png" data-src="img/swedish-girls.jpg" class="img-fluid mx-auto d-block img-top-radius lazyload" alt="placeholder image" />
 							</div>
 						</div>
 					</div>
 					<div class="card-body body-card">
-						<h3 class="card-header-title c-pad-all mg-clear">
+						<h1 class="card-header-title c-pad-all mg-clear">
 							Swedish Girls
-						</h3>
+						</h1>
 						<div class="divider-h divider-padding">
 							<span class="divider"></span>
 						</div>
@@ -412,7 +424,7 @@ html {
 						</p>
 						<div class="divider-h divider-padding">
 							<span class="divider"></span>
-						</div><a href="swedish-girls.html" class="btn btn-d btn-sq button-test btn-sm c-pad-all btn-block"><span class="fa fa-instagram icon-spacer"></span>Instagram</a>
+						</div><a href="https://www.instagram.com/_swedish_girls_/?hl=en" class="btn btn-d btn-sq button-test btn-sm c-pad-all btn-block" data-target="_blank" target="_blank"><span class="fa fa-instagram icon-spacer"></span>Instagram</a>
 						<div class="divider-h divider-bloc-2-padding">
 							<span class="divider"></span>
 						</div>
@@ -429,8 +441,8 @@ html {
 						<div id="accordion-3927-item-1" class="collapse" aria-labelledby="heading2" data-parent="#accordion-3927">
 							<div class="card-body body-card-2">
 								<div class="row no-gutters">
-									<div class="col-lg-5 col-md-6 col-sm-6">
-										<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
+									<div class="col-lg-5 col-md-6 col-sm-6 col-7">
+										<img src="img/lazyload-ph.png" data-src="img/matilda-ellow.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
 									</div>
 								</div>
 							</div>
@@ -468,8 +480,8 @@ html {
 						<div id="accordion-3927-item-2" class="collapse" aria-labelledby="heading2" data-parent="#accordion-3927">
 							<div class="card-body body-card-2">
 								<div class="row no-gutters">
-									<div class="col-lg-5 col-md-6 col-sm-6">
-										<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
+									<div class="col-lg-5 col-md-6 col-sm-6 col-7">
+										<img src="img/lazyload-ph.png" data-src="img/julia-jondell.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
 									</div>
 								</div>
 							</div>
@@ -507,8 +519,8 @@ html {
 						<div id="accordion-3927-item-3" class="collapse" aria-labelledby="heading3" data-parent="#accordion-3927">
 							<div class="card-body body-card-2">
 								<div class="row no-gutters">
-									<div class="col-lg-5 col-md-6 col-sm-6">
-										<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
+									<div class="col-lg-5 col-md-6 col-sm-6 col-7">
+										<img src="img/lazyload-ph.png" data-src="img/mira-bergh.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
 									</div>
 								</div>
 							</div>
@@ -546,8 +558,8 @@ html {
 						<div id="accordion-3927-item-4" class="collapse" aria-labelledby="heading4" data-parent="#accordion-3927">
 							<div class="card-body body-card-2">
 								<div class="row no-gutters">
-									<div class="col-lg-5 col-md-6">
-										<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
+									<div class="col-lg-5 col-md-6 col-7">
+										<img src="img/lazyload-ph.png" data-src="img/josefin-zachrisson.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
 									</div>
 								</div>
 							</div>
@@ -594,17 +606,19 @@ html {
 							<div class="col-6 col-lg-4 col-sm-4 col-md-6">
 								<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block pasf-img mg-sm lazyload" alt="field" />
 								<p>
-									<a class="pasf-title" href="swedish-girls.html">Design</a><br>
+									<a class="pasf-title" href="swedish-girls.html">Great design</a><br>
 								</p>
 							</div>
 							<div class="col-6 col-lg-4 col-sm-4 col-md-6">
 								<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block pasf-img mg-sm lazyload" alt="field" />
 								<p>
-									<a class="pasf-title" href="swedish-girls.html">Design</a><br>
+									<a class="pasf-title" href="swedish-girls.html">D</a><br>
 								</p>
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="container-div-0-style">
 				</div>
 			</div>
 		</div>
@@ -612,46 +626,47 @@ html {
 </div>
 <!-- bloc-2 END -->
 
-<!-- bloc-27 -->
-<div class="bloc l-bloc" id="bloc-27">
-	<div class="container bloc-lg">
+<!-- footer -->
+<div class="bloc bgc-white-2 l-bloc" id="footer">
+	<div class="container bloc-md">
 		<div class="row">
-			<div class="col-lg-6 d-flex offset-lg-2">
+			<div class="d-flex offset-lg-2 col-lg-8">
 				<div class="div-delete2">
 					<a href="swedish-girls.html" class="btn btn-d btn-sq btn-xl button-blue float-lg-none"><span class="fa fa-angle-left icon-spacer icon-md icon-bleu-de-france button-blue2"></span>Home</a>
-					<h1 class="text-md-center text-sm-center text-center bottom-logo text-lg-center float-lg-none">
+					<h2 class="text-md-center text-sm-center text-center bottom-logo text-lg-center float-lg-none">
 						<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
-					</h1>
+					</h2>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-27 END -->
+<!-- footer END -->
 
 <!-- bloc-28 -->
-<div class="bloc bgc-anti-flash-white footer-border l-bloc" id="bloc-28">
-	<div class="container bloc-sm">
+<div class="bloc bgc-anti-flash-white footer-border full-width-bloc l-bloc" id="bloc-28">
+	<div class="container ">
 		<div class="row">
-			<div class="col-lg-12">
-				<p class="text-lg-center opacity-span">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-11 col offset-md-1">
+				<p class="text-sm-center text-center text-lg-left p-style mg-sm text-md-left">
 					Swedish Girls &nbsp;- From your Internet address -&nbsp;<a class="ltc-bleu-de-france" href="maps.html">Learn more</a>
 				</p>
 			</div>
-			<div class="col">
-				<div class="footer-div-center text-lg-center">
-					<ul class="list-horizontal-layout list-unstyled">
-						<li>
-							<a href="swedish-girls.html" class="a-btn a-block opacity-span">mail@swedishgirls.org</a>
-						</li>
-						<li>
-							<a href="swedish-girls.html" class="a-btn opacity-span a-block">Katrinebergsbacken 6</a>
-						</li>
-						<li>
-							<a href="swedish-girls.html" class="a-btn a-block opacity-span">117 61 Stockholm</a>
-						</li>
-					</ul>
+			<div class="col-lg-12">
+				<div class="divider-h divider-bloc-28-padding">
+					<span class="divider"></span>
 				</div>
+			</div>
+			<div class="left-padding-col col-lg-11 offset-lg-1 offset-md-1 col" id="footer-col-3">
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					mail@swedishgirls.org
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					Katrinebergsbacken 6
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-lg-sm text-md-left">
+					117 61 Stockholm
+				</p>
 			</div>
 		</div>
 	</div>
@@ -662,18 +677,47 @@ html {
 <!-- Main container END -->
     
 
-<script src="./js/jquery-3.3.1.min.js?1343"></script>
-<script src="./js/bootstrap.bundle.min.js?9856"></script>
-<script src="./js/blocs.min.js?1133"></script>
+<script src="./js/jquery-3.3.1.min.js?37"></script>
+<script src="./js/bootstrap.bundle.min.js?7343"></script>
+<script src="./js/blocs.min.js?9589"></script>
 <script src="./js/lazysizes.min.js" defer></script>
 <!-- Additional JS END -->
 <style>
 
- .footer-div-center {
- 	display: flex;
- 	justify-content: center;
- 	font-size: 14px;
+
+ 
+ 
+  .footer-list {
+
+ 	
  }
+ 
+ @media only screen and (max-width: 1000px) {
+  #footer-col-3 {
+ 
+ 	
+ }
+ }
+ 
+   .opacity-span {
+   	display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-left: 0;
+ 	font-size: 14px;
+ 	
+ }
+ 
+ @media only screen and (max-width: 770px) {
+  .opacity-span {
+  	display: block;
+
+    
+ 	
+ }
+ }
+ 
  	
  	
  	</style>
