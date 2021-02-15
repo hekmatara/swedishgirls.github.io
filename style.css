@@ -35,18 +35,17 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 @font-face {
-	font-family:'Arial-BoldMT';
-	src: url('./fonts/Arial-BoldMT/Arial%20Bold.ttf');
-	src: url('./fonts/Arial-BoldMT/Arial%20Bold.ttf') format('truetype');
+	font-family:'Arial-BoldItalicMT';
+	src: url('./fonts/Arial-BoldItalicMT/Arial%20Bold%20Italic.ttf');
+	src: url('./fonts/Arial-BoldItalicMT/Arial%20Bold%20Italic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
-
 @font-face {
-	font-family:'Arial-BoldItalicMT';
-	src: url('./fonts/Arial-BoldItalicMT/Arial%20Bold%20Italic.ttf');
-	src: url('./fonts/Arial-BoldItalicMT/Arial%20Bold%20Italic.ttf') format('truetype');
+	font-family:'Arial-BoldMT';
+	src: url('./fonts/Arial-BoldMT/Arial%20Bold.ttf');
+	src: url('./fonts/Arial-BoldMT/Arial%20Bold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -153,57 +152,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	background-attachment:scroll;
 }
 }
-
-/* Dark theme */
-
-.d-bloc{
-	color:rgba(255,255,255,.7);
-}
-.d-bloc button:hover{
-	color:rgba(255,255,255,.9);
-}
-.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
-	border-color:rgba(255,255,255,.9);
-}
-.d-bloc .divider-h span{
-	border-color:rgba(255,255,255,.2);
-}
-.d-bloc .a-btn,.d-bloc .navbar a, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
-	color:rgba(255,255,255,.6);
-}
-.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
-	color:rgba(255,255,255,1);
-}
-.d-bloc .navbar-toggle .icon-bar{
-	background:rgba(255,255,255,1);
-}
-.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
-	color:rgba(255,255,255,1);
-	border-color:rgba(255,255,255,1);
-}
-.d-bloc .card{
-	color:rgba(0,0,0,.5);
-}
-.d-bloc .card button:hover{
-	color:rgba(0,0,0,.7);
-}
-.d-bloc .card icon{
-	border-color:rgba(0,0,0,.7);
-}
-.d-bloc .card .divider-h span{
-	border-color:rgba(0,0,0,.1);
-}
-.d-bloc .card .a-btn{
-	color:rgba(0,0,0,.6);
-}
-.d-bloc .card .a-btn:hover{
-	color:rgba(0,0,0,1);
-}
-.d-bloc .card .btn-wire, .d-bloc .card .btn-wire:hover{
-	color:rgba(0,0,0,.7);
-	border-color:rgba(0,0,0,.3);
-}
-
 
 /* Light theme */
 
@@ -1690,8 +1638,7 @@ a{
 	font-family:"ArialMT";
 }
 .card-visit-intro{
-	margin-right:10px;
-	margin-left:10px;
+	;
 }
 .div-visit-intro{
 	;
@@ -1726,8 +1673,6 @@ a{
 	font-family:"Arial-BoldMT";
 	text-align:center;
 	font-size:14px;
-	margin:0px 0px 0px 0px;
-	padding:0px 0px 10px 0px;
 }
 .info-icn{
 	padding-left:2px;
@@ -1742,11 +1687,13 @@ a{
 .arrow-icn{
 	float:none;
 	margin-top:25px;
+	margin-right:20px;
 }
 .cross-icn{
 	height:60px;
 	padding-top:10px;
 	padding-bottom:10px;
+	margin-top:20px;
 }
 .cross-icn:hover{
 	text-shadow:0px 0px 3px #000000;
@@ -1804,6 +1751,9 @@ a{
 	font-family:"Arial-BoldItalicMT";
 	font-size:30px;
 }
+.inspired-block{
+	margin-bottom:150px;
+}
 .shopping-link{
 	width:98%;
 }
@@ -1827,6 +1777,9 @@ a{
 	border-style:solid;
 	margin:10px 10px 10px 20px;
 	padding:10px 10px 10px 10px;
+}
+.col-info{
+	margin-right:30px;
 }
 
 /* = Colour
@@ -2045,10 +1998,13 @@ a{
 		padding:5px 5px 5px 5px;
 	}
 	.inspired-block{
-		margin-bottom:100px;
+		;
 	}
 	.banner-text{
 		font-size:20px;
+	}
+	.card-visit-intro{
+		;
 	}
 	
 	/* MD Text Margin Offsets */
@@ -2195,11 +2151,10 @@ a{
 		;
 	}
 	.div-visit-intro{
-		padding:0px 0px 0px 0px;
+		;
 	}
 	.card-visit-intro{
-		margin:0px 0px 0px 0px;
-		padding:0px 0px 0px 0px;
+		;
 	}
 	.info-icn{
 		padding:5px 5px 5px 5px;
@@ -2228,7 +2183,7 @@ a{
 		height:300px;
 	}
 	.inspired-block{
-		margin-bottom:200px;
+		margin-bottom:300px;
 	}
 	.banner-text{
 		font-size:14px;
@@ -2436,20 +2391,17 @@ a{
 		height:100vh;
 	}
 	.card-visit-intro{
-		margin:0px 0px 0px 0px;
-		padding:0px 0px 0px 0px;
+		;
 	}
 	.div-visit-intro{
-		padding:0px 0px 0px 0px;
+		;
 	}
 	.icon-test{
-		padding-left:0px;
-		margin-left:0px;
+		;
 	}
 	.h2-style{
 		padding-bottom:15px;
 		font-size:16px;
-		margin-left:20px;
 	}
 	.visit-intro-text{
 		font-size:14px;
@@ -2474,8 +2426,7 @@ a{
 		margin-right:5px;
 	}
 	.visit-card-body{
-		padding-right:5px;
-		padding-left:5px;
+		;
 	}
 	.arrow-icn:hover{
 		text-shadow:0px 0px 0px #000000;
@@ -2486,7 +2437,7 @@ a{
 		padding-right:5px;
 	}
 	.inspired-block{
-		margin-bottom:300px;
+		margin-bottom:400px;
 	}
 	.banner-text{
 		margin:0px 0px 0px 0px;
@@ -2494,6 +2445,10 @@ a{
 	}
 	.full-screen-bloc-copy-1{
 		height:200px;
+	}
+	.banner-row{
+		width:100%;
+		margin:0px 0px 0px 0px;
 	}
 	
 	/* Mobile Text Margin Offsets */
