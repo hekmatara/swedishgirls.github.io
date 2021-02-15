@@ -42,13 +42,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-style: normal;
 }
 
-@font-face {
-	font-family:'AlbertusNovaBlack';
-	src: url('./fonts/AlbertusNovaBlack/AlbertusNovaBlack.ttf');
-	src: url('./fonts/AlbertusNovaBlack/AlbertusNovaBlack.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
 
 @font-face {
 	font-family:'Arial-BoldItalicMT';
