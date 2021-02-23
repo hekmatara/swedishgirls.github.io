@@ -1029,11 +1029,13 @@ h3{
 	font-size:14px;
 	line-height:30px;
 	height:35px;
+	padding-right:15px;
+	padding-left:15px;
 }
 .button-test:hover{
 	background-color:transparent;
-	padding-left:15px;
 	padding-right:15px;
+	padding-left:15px;
 }
 .button-test:active{
 	background-color:transparent;
@@ -1780,6 +1782,10 @@ a{
 }
 .col-info{
 	margin-right:30px;
+}
+.c-pad-all:hover{
+	padding-right:15px;
+	padding-left:15px;
 }
 
 /* = Colour
