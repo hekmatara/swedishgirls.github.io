@@ -1,0 +1,816 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?9910">
+	<link rel="stylesheet" type="text/css" href="style.css?6039">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?8313">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/feather.min.css">
+	<link href='https://fonts.googleapis.com/css?family=arialbold_italic&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>Images</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<style>
+
+
+@font-face {
+	font-family:'arialbold_italic';
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf');
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'arialbold_italic';
+    src: url('./fonts/ArialMT/arial_bold_italic-webfont.woff2') format('woff2'),
+         url('./fonts/ArialMT/arial_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html {
+    cursor: url("https://static.cargo.site/images/up.png"), auto !important;
+}
+
+ .button-blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2px;
+  padding-right: 10px;
+}
+
+ .max-height {
+ 	overflow: hidden;
+ 	max-height: 80%;
+ }
+
+ .ref {
+ 	font-size: 16px;
+ 	color: black;
+ }
+
+
+ .search-path {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+ }
+
+
+ .div-delete2 {
+ 	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+ 
+
+ 
+  .test-delete {
+    min-width: 450px;
+ }
+ 
+ .right-padding-col {
+ 	z-index: 2;
+ }
+ 	
+ 
+ .bottom-logo {
+ 	white-space: nowrap;
+ }
+ 
+ #navbar {
+ 	z-index: 99;
+ }
+
+ .navbar {
+ 	padding: 0;
+ 	margin: 0;
+ 	z-index: 1;
+ 	
+ }
+ 
+ .blocsapp-special-menu blocsnav {
+ 	background: white;
+ }
+ 
+ .close-special-menu {
+ 	font-color: black;
+ 	
+ }
+ 
+ .close-icon {
+ 	color: black;
+ }
+ 
+ .card {
+ 	background: white;
+ }
+ 
+ .toggle-button {
+ 	position: fixed;
+ 	top: 15px;
+ 	left: 10px;
+ 	z-index: 10;
+ }
+ 
+  a[data-lightbox]:hover img {
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 	opacity: 1;
+ 	
+ }
+ 
+  @media only screen and (max-width: 1000px) {
+   a[data-lightbox]:hover img {
+    box-shadow: none;
+    
+    background-color: none;
+  }
+}
+ 
+
+ 
+  a[data-lightbox]:hover::before {
+  	content: none!important;
+  	
+  }
+  
+
+
+
+ .column-proj-head {
+ 	display: flex;
+    align-items: center;
+ 	justify-content: center;
+ }
+ 
+ .banner-project {
+ 	top: -50px;
+ }
+ 
+ 
+  .blocs-lb-container img {
+	max-height: 90vh;
+        
+ }
+ 
+   .blocs-lb-container {
+     border: none;
+     background: transparent;
+   }
+	
+  @media only screen and (max-width: 1000px) {
+  	.blocs-lb-container {
+  	left: 0;
+  	right: 0;
+
+  }
+  .blocs-lb-container img {
+  	height: auto;
+
+  	
+  }
+  }
+  
+  .prev-lightbox {
+  	left: 0;
+  	  	border-radius: 0;
+
+  }
+  
+  .next-lightbox {
+   right: 0;
+     	border-radius: 0;
+
+  }
+  
+  .close-lightbox {
+  	background: white;
+  	color: black;
+  
+  	top: 0;
+  	right: 0;
+  	border-radius: 0;
+  	transition: 0.2s;
+  	cursor: pointer;
+
+    
+  	
+  }
+    .close-lightbox:hover {
+  	background: white;
+  	color: black;
+
+  	
+  }
+
+</style>
+
+<script>
+
+</script>
+
+
+
+
+
+
+<style>
+
+ .ref::before {
+  content: "images";
+}
+
+ #navbar {
+ 	width: 100%;
+ }
+
+.listitem-images {
+ 	border-bottom: solid 4px #4B80F5;
+ }
+ 
+  img {
+  	margin-bottom: 20px;
+  	
+  }
+  
+  .image-navbar {
+
+  }
+  	
+ 
+
+
+ 	
+ 
+
+   
+ </style>
+ 
+ <script>
+
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+
+</script>
+ 
+
+    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
+    
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- navbar -->
+<div class="bloc full-width-bloc row-1-style bgc-white visit-video-top l-bloc" id="navbar">
+	<div class="container ">
+		<div class="row">
+			<div class="col-lg-1 col-md-1">
+				<p class="text-center float-lg-none h1-style text-lg-left text-md-left text-sm-center">
+					<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
+				</p>
+			</div>
+			<div class="left-padding-col col-lg-6 col-md-8">
+				<div class=" input-style">
+					<p><span class="ref"></span></p>
+					
+				</div>
+			</div>
+			<div class="left-padding-col offset-lg-1 offset-md-1 test-delete col-lg-5 col-md-7">
+					<nav class="navbar navbar-light row nav-invert bar-nav navbar-expand-md" role="navigation">
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 toggle-button" data-toggle="collapse" data-target=".navbar-22859" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-22859  fullscreen-nav open-left col-lg-12">
+							<ul class="site-navigation nav navbar-nav menu-nav">
+								<li class="nav-item">
+									<a href="swedish-girls.html" class="nav-link a-btn">All</a>
+								</li>
+								<li class="nav-item listitem-images">
+									<a href="images.html" class="nav-link">Images</a>
+								</li>
+								<li class="nav-item listitem-vid">
+									<a href="videos.html" class="nav-link">Videos</a>
+								</li>
+								<li class="nav-item listitem-maps">
+									<a href="maps.html" class="nav-link">Maps</a>
+								</li>
+								<li class="nav-item listitem-news">
+									<a href="news.html" class="nav-link">News</a>
+								</li>
+								<li class="nav-item listitem-shopping">
+									<a href="shopping.html" class="nav-link">Shopping</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			<div class="col">
+					<div class="btn-group btn-dropdown float-lg-none">
+						<a href="#" class="btn dropdown-toggle  btn-d btn-sm dropdown-style btn-style-none d-md-inline-block  d-none" data-toggle="dropdown" aria-expanded="false">Projects</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="scene-and-bench.html" class="a-btn">Scene &amp; Bench</a>
+							</li>
+							<li>
+								<a href="visit-swedish-girls.html" class="a-btn">Visit Swedish Girls</a>
+							</li>
+							<li>
+								<a href="experience-swedish-girls.html" class="a-btn">Experience Swedish Girls</a>
+							</li>
+							<li>
+								<a href="served-by-swedish-girls.html" class="a-btn">Served by Swedish Girls</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+<!-- navbar END -->
+
+<!-- bloc-10 -->
+<div class="bloc l-bloc full-width-bloc" id="bloc-10">
+	<div class="container ">
+		<div class="row">
+			<div class="image-navbar col-sm-3 col-2 col-lg-2 col-md-2">
+				<a href="index.html"><img src="img/lazyload-ph.png" data-src="img/SG%20%2837%29.jpg" class="img-fluid rounded-circle image-navbar-img float-lg-none img-sg-2837-29-style lazyload" alt="Cirkel_FORST_Lokal_Swedish_Girls_Release 1_thumb%20copy" /></a><a href="scene-and-bench.html" class="btn btn-d btn-sq image-navbar-btn float-lg-none btn-style btn-lg">Scene &amp; Bench</a>
+			</div>
+			<div class="image-navbar col-md-2 col-sm-3 col-2 col-lg-2">
+				<a href="index.html"><img src="img/lazyload-ph.png" data-src="img/bakgrund-copy.png" class="img-fluid rounded-circle image-navbar-img float-lg-none lazyload" alt="Cirkel_FORST_Lokal_Swedish_Girls_Release 1_thumb%20copy" /></a><a href="visit-swedish-girls.html" class="btn btn-d btn-sq image-navbar-btn float-lg-none btn-style btn-lg">Visit Swedish Girls</a>
+			</div>
+			<div class="image-navbar col-lg-2 col-md-2 col-sm-3 align-self-start col-2">
+				<a href="#" data-scroll-speed="1000" onclick="scrollToTarget('#bloc-13',this)"><img src="img/lazyload-ph.png" data-src="img/Cirkel_FORST_Lokal_Swedish_Girls_Release-1_thumb%20copy.jpg" class="img-fluid rounded-circle image-navbar-img float-lg-none lazyload" alt="Cirkel_FORST_Lokal_Swedish_Girls_Release 1_thumb%20copy" /></a><a href="experience-swedish-girls.html" class="btn btn-d btn-sq image-navbar-btn float-lg-none btn-sm">Experience Swedish Girls</a>
+			</div>
+			<div class="image-navbar col-md-3 col-lg-2 col-sm-3 align-self-start col-2">
+				<a href="#" data-scroll-speed="1000" onclick="scrollToTarget('#bloc-16',this)"><img src="img/lazyload-ph.png" data-src="img/Served%20KLARA-IMG_6061%20copy.jpg" class="img-fluid rounded-circle image-navbar-img float-lg-none lazyload" alt="Cirkel_FORST_Lokal_Swedish_Girls_Release 1_thumb%20copy" /></a><a href="served-by-swedish-girls.html" class="btn btn-d btn-sq btn-lg image-navbar-btn float-lg-none">Served by Swedish Girls</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-10 END -->
+
+<!-- bloc-13 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-13">
+	<div class="container ">
+		<div class="row">
+			<div class="col-lg-2 col-md-4 col-6 col-sm-6">
+				<a href="#" data-lightbox="img/julia-jondell.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/julia-jondell.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 col-sm-6">
+				<a href="#" data-lightbox="img/mira-bergh.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mira-bergh.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="1_FORST_Lokal_Swedish_Girls_Release 1" /></a>
+			</div>
+			<div class="col-12 col-lg-4 order-md-1 d-block col-md-8 order-sm-1 order-1 col-sm-12">
+				<a href="#" data-lightbox="img/swedish-girls.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-md-4 col-lg-2 col-6 col-sm-6">
+				<a href="#" data-lightbox="img/josefin-zachrisson.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/josefin-zachrisson.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-md-4 col-lg-2 col-6 col-sm-6">
+				<a href="#" data-lightbox="img/matilda-ellow.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/matilda-ellow.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+				<a href="#" data-lightbox="img/SG%20%2863%29-1.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%2863%29-1.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="1_FORST_Lokal_Swedish_Girls_Release 1" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/SG%20%2837%29.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%2837%29.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/SG%20%2868%29.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%2868%29.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/SG%20%2828%29.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%2828%29.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-12 col-lg-4 col-md-8 col-sm-12">
+				<a href="#" data-lightbox="img/DSC_3061.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/DSC_3061.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-12 col-lg-4 col-md-8 col-sm-12">
+				<a href="#" data-lightbox="img/SG%20%289%29.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%289%29.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 35_thumb" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-24.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-24.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-23.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-23.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-22.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-22.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 33_thumb" /></a>
+			</div>
+			<div class="col-sm-6 col-lg-2 col-md-4 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-21.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-21.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 35_thumb" /></a>
+			</div>
+			<div class="col-sm-6 col-lg-2 col-md-4 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-20.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-20.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-17.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-17.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-1.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-1.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-2.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-2.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-15.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-15.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-11.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-11.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-lg-3 col-md-6 col-12">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-18.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-18.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="1_FORST_Lokal_Swedish_Girls_Release 1" /></a>
+			</div>
+			<div class="col-sm-6 col-lg-3 col-md-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-9.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-9.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-lg-3 col-md-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-10.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-10.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-lg-3 col-md-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-6.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-6.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2">
+				<a href="#" data-lightbox="img/untitled%20%281%29.png" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/untitled%20%281%29.png" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-19.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-19.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 35_thumb" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-16.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-16.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-14.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-14.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-13.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-13.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 33_thumb" /></a>
+			</div>
+			<div class="col-lg-2 col-md-4 col-12 col-sm-12">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-12.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-12.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="1_FORST_Lokal_Swedish_Girls_Release 1" /></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-8.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-8.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-7.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-7.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-5.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-5.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/swedish-girls-humana-thumb-4.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/swedish-girls-humana-thumb-4.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 35_thumb" /></a>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-2 col-md-4">
+				<a href="#" data-lightbox="img/k.png" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/k.png" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 35_thumb" /></a>
+			</div>
+			<div class="col-sm-6 col-lg-2 col-md-4">
+				<a href="#" data-lightbox="img/hej.png" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/hej.png" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+				<a href="#" data-lightbox="img/1_FORST_Lokal_Swedish_Girls_Release-1.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/1_FORST_Lokal_Swedish_Girls_Release-1.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="1_FORST_Lokal_Swedish_Girls_Release 1" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Lokal_Swedish_Girls_Release-23.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Lokal_Swedish_Girls_Release-23.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-11.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-11.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Lokal_Swedish_Girls_Release-25.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Lokal_Swedish_Girls_Release-25.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-36_thumb.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-36_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-37.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-37.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 35_thumb" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-17.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-17_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-30.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-30_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-32.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-32_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-33.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-33_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 33_thumb" /></a>
+			</div>
+			<div class="col-sm-6 col-lg-2 col-md-4 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-35.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-35_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="Mingel_Swedish_Girls_Release 35_thumb" /></a>
+			</div>
+			<div class="col-sm-6 col-lg-2 col-md-4 col-6">
+				<a href="#" data-lightbox="img/Lokal_Swedish_Girls_Release-36.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Lokal_Swedish_Girls_Release-36_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-13 END -->
+
+<!-- bloc-12 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-12">
+	<div class="container ">
+		<div class="row">
+			<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+				<a href="#" data-lightbox="img/1_FORST_Spons_Swedish_Girls_Release-19-2.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/1_FORST_Spons_Swedish_Girls_Release-19-2_thumb.jpg" class="img-fluid mx-auto d-block lazyload" alt="1_FORST_Spons_Swedish_Girls_Release 19-2" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-46.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-46_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-45.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-45_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-40.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-40_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-43.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-43_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 offset-lg-0 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-10.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-10_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-39.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-39_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+				<a href="#" data-lightbox="img/1_FORST_Lokal_Swedish_Girls_Release-30.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/1_FORST_Lokal_Swedish_Girls_Release-30_thumb.jpg" class="img-fluid mx-auto d-block lazyload" alt="1_FORST_Lokal_Swedish_Girls_Release 30_thumb" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Lokal_Swedish_Girls_Release-29.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Lokal_Swedish_Girls_Release-29_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Lokal_Swedish_Girls_Release-31.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Lokal_Swedish_Girls_Release-31_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-53.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-53_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Lokal_Swedish_Girls_Release-2.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Lokal_Swedish_Girls_Release-2_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-12 END -->
+
+<!-- bloc-11 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-11">
+	<div class="container ">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-50.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-50_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-52.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-52_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+				<a href="#" data-lightbox="img/1_FORST_Mingel_Swedish_Girls_Release-55-2.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/1_FORST_Mingel_Swedish_Girls_Release-55-2_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="1_FORST_Mingel_Swedish_Girls_Release 55-2" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-1%202.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-1%202_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-63.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-63_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_Swedish_Girls_Release-65.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_Swedish_Girls_Release-65_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-11 END -->
+
+<!-- bloc-16 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-16">
+	<div class="container ">
+		<div class="row">
+			<div class="align-self-end col-lg-2 col-md-4 col-12 col-sm-4">
+				<a href="#" data-lightbox="img/Served%20KLARA-IMG_5870.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Served%20KLARA-IMG_5870_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="1_FORST_Lokal_Swedish_Girls_Release 1" /></a>
+			</div>
+			<div class="align-self-end col-lg-4 col-md-8 col-sm-8">
+				<a href="#" data-lightbox="img/Served%20KLARA-IMG_6061.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Served%20KLARA-IMG_6061_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="align-self-end col-lg-4 col-md-8 col-sm-12">
+				<a href="#" data-lightbox="img/Served%20KLARA-IMG_6113.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Served%20KLARA-IMG_6113.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-lg-2 col-md-4 col-12 col-sm-6">
+				<a href="#" data-lightbox="img/Mingel_IMG_5454.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_IMG_5454_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="1_FORST_Lokal_Swedish_Girls_Release 30_thumb" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-16 END -->
+
+<!-- bloc-14 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-14">
+	<div class="container ">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5636.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5636_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/Mingel_IMG_5683.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/Mingel_IMG_5683_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5663.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5663_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/mingel_IMG_5587.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mingel_IMG_5587_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5592.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5592_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5622.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5622_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5702.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5702_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5582.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5582_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5586.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5586_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/mingel_IMG_5567.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mingel_IMG_5567_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+				<a href="#" data-lightbox="img/mingel_IMG_5500.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mingel_IMG_5500_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5569.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5569_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/mingel_IMG_5467-2.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mingel_IMG_5467-2_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5545.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5545_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/mingel_IMG_5543.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mingel_IMG_5543_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5528.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5528_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5527.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5527_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-12">
+				<a href="#" data-lightbox="img/IMG_5565.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5565_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-12 col-md-6 col-sm-6 col-lg-4">
+				<a href="#" data-lightbox="img/mingel_IMG_5580.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mingel_IMG_5580_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-12 col-md-6 col-sm-6 col-lg-4">
+				<a href="#" data-lightbox="img/IMG_5502.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5502_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/IMG_5494.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5494_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+				<a href="#" data-lightbox="img/mingel_IMG_5489.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/mingel_IMG_5489_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+				<a href="#" data-lightbox="img/IMG_5463-2.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/IMG_5463-2_thumb.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-14 END -->
+
+<!-- footer -->
+<div class="bloc bgc-white-2 l-bloc" id="footer">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="d-flex offset-lg-2 col-lg-8">
+				<div class="div-delete2">
+					<a href="swedish-girls.html" class="btn btn-d btn-sq btn-xl button-blue float-lg-none"><span class="fa fa-angle-left icon-spacer icon-md icon-bleu-de-france button-blue2"></span>Home</a>
+					<h2 class="text-md-center text-sm-center text-center bottom-logo text-lg-center float-lg-none">
+						<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer END -->
+
+<!-- bloc-28 -->
+<div class="bloc bgc-anti-flash-white footer-border full-width-bloc l-bloc" id="bloc-28">
+	<div class="container ">
+		<div class="row">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-11 col offset-md-1">
+				<p class="text-sm-center text-center text-lg-left p-style mg-sm text-md-left">
+					Swedish Girls &nbsp;- From your Internet address -&nbsp;<a class="ltc-bleu-de-france" href="maps.html">Learn more</a>
+				</p>
+			</div>
+			<div class="col-lg-12">
+				<div class="divider-h divider-bloc-28-padding">
+					<span class="divider"></span>
+				</div>
+			</div>
+			<div class="left-padding-col col-lg-11 offset-lg-1 offset-md-1 col" id="footer-col-3">
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					mail@swedishgirls.org
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					Katrinebergsbacken 6
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-lg-sm text-md-left">
+					117 61 Stockholm
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-28 END -->
+
+</div>
+<!-- Main container END -->
+    
+
+<script src="./js/jquery-3.3.1.min.js?1244"></script>
+<script src="./js/bootstrap.bundle.min.js?1375"></script>
+<script src="./js/blocs.min.js?951"></script>
+<script src="./js/jquery.touchSwipe.min.js" defer></script>
+<script src="./js/lazysizes.min.js" defer></script>
+<!-- Additional JS END -->
+<style>
+
+
+ 
+ 
+  .footer-list {
+
+ 	
+ }
+ 
+ @media only screen and (max-width: 1000px) {
+  #footer-col-3 {
+ 
+ 	
+ }
+ }
+ 
+   .opacity-span {
+   	display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-left: 0;
+ 	font-size: 14px;
+ 	
+ }
+ 
+ @media only screen and (max-width: 770px) {
+  .opacity-span {
+  	display: block;
+
+    
+ 	
+ }
+ }
+ 
+ 	
+ 	
+ 	</style>
+
+</body>
+</html>

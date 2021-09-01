@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?7363">
+	<link rel="stylesheet" type="text/css" href="style.css?5336">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?1569">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/feather.min.css">
+	<link href='https://fonts.googleapis.com/css?family=arialbold_italic&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>scenochbank</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<style>
+
+
+@font-face {
+	font-family:'arialbold_italic';
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf');
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'arialbold_italic';
+    src: url('./fonts/ArialMT/arial_bold_italic-webfont.woff2') format('woff2'),
+         url('./fonts/ArialMT/arial_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html {
+    cursor: url("https://static.cargo.site/images/up.png"), auto !important;
+}
+
+ .button-blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2px;
+  padding-right: 10px;
+}
+
+ .max-height {
+ 	overflow: hidden;
+ 	max-height: 80%;
+ }
+
+ .ref {
+ 	font-size: 16px;
+ 	color: black;
+ }
+
+
+ .search-path {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+ }
+
+
+ .div-delete2 {
+ 	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+ 
+
+ 
+  .test-delete {
+    min-width: 450px;
+ }
+ 
+ .right-padding-col {
+ 	z-index: 2;
+ }
+ 	
+ 
+ .bottom-logo {
+ 	white-space: nowrap;
+ }
+ 
+ #navbar {
+ 	z-index: 99;
+ }
+
+ .navbar {
+ 	padding: 0;
+ 	margin: 0;
+ 	z-index: 1;
+ 	
+ }
+ 
+ .blocsapp-special-menu blocsnav {
+ 	background: white;
+ }
+ 
+ .close-special-menu {
+ 	font-color: black;
+ 	
+ }
+ 
+ .close-icon {
+ 	color: black;
+ }
+ 
+ .card {
+ 	background: white;
+ }
+ 
+ .toggle-button {
+ 	position: fixed;
+ 	top: 15px;
+ 	left: 10px;
+ 	z-index: 10;
+ }
+ 
+  a[data-lightbox]:hover img {
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 	opacity: 1;
+ 	
+ }
+ 
+  @media only screen and (max-width: 1000px) {
+   a[data-lightbox]:hover img {
+    box-shadow: none;
+    
+    background-color: none;
+  }
+}
+ 
+
+ 
+  a[data-lightbox]:hover::before {
+  	content: none!important;
+  	
+  }
+  
+
+
+
+ .column-proj-head {
+ 	display: flex;
+    align-items: center;
+ 	justify-content: center;
+ }
+ 
+ .banner-project {
+ 	top: -50px;
+ }
+ 
+ 
+  .blocs-lb-container img {
+	max-height: 90vh;
+        
+ }
+ 
+   .blocs-lb-container {
+     border: none;
+     background: transparent;
+   }
+	
+  @media only screen and (max-width: 1000px) {
+  	.blocs-lb-container {
+  	left: 0;
+  	right: 0;
+
+  }
+  .blocs-lb-container img {
+  	height: auto;
+
+  	
+  }
+  }
+  
+  .prev-lightbox {
+  	left: 0;
+  	  	border-radius: 0;
+
+  }
+  
+  .next-lightbox {
+   right: 0;
+     	border-radius: 0;
+
+  }
+  
+  .close-lightbox {
+  	background: white;
+  	color: black;
+  
+  	top: 0;
+  	right: 0;
+  	border-radius: 0;
+  	transition: 0.2s;
+  	cursor: pointer;
+
+    
+  	
+  }
+    .close-lightbox:hover {
+  	background: white;
+  	color: black;
+
+  	
+  }
+
+</style>
+
+<script>
+
+</script>
+
+
+
+
+<style>
+
+
+
+ 
+  .ref::before {
+  content: "scene and bench";
+}
+
+
+ 
+ .card {
+ 	background: transparent;
+ }
+ 
+
+ 
+
+ 
+ </style>
+    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
+    
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- navbar -->
+<div class="bloc full-width-bloc row-1-style bgc-white visit-video-top l-bloc" id="navbar">
+	<div class="container ">
+		<div class="row">
+			<div class="col-lg-1 col-md-1">
+				<p class="text-center float-lg-none h1-style text-lg-left text-md-left text-sm-center">
+					<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
+				</p>
+			</div>
+			<div class="left-padding-col col-lg-6 col-md-8">
+				<div class=" input-style">
+					<p><span class="ref"></span></p>
+					
+				</div>
+			</div>
+			<div class="left-padding-col offset-lg-1 offset-md-1 test-delete col-lg-5 col-md-7">
+					<nav class="navbar navbar-light row nav-invert bar-nav navbar-expand-md" role="navigation">
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 toggle-button" data-toggle="collapse" data-target=".navbar-22859" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-22859  fullscreen-nav open-left col-lg-12">
+							<ul class="site-navigation nav navbar-nav menu-nav">
+								<li class="nav-item">
+									<a href="swedish-girls.html" class="nav-link a-btn">All</a>
+								</li>
+								<li class="nav-item listitem-images">
+									<a href="images.html" class="nav-link">Images</a>
+								</li>
+								<li class="nav-item listitem-vid">
+									<a href="videos.html" class="nav-link">Videos</a>
+								</li>
+								<li class="nav-item listitem-maps">
+									<a href="maps.html" class="nav-link">Maps</a>
+								</li>
+								<li class="nav-item listitem-news">
+									<a href="news.html" class="nav-link">News</a>
+								</li>
+								<li class="nav-item listitem-shopping">
+									<a href="shopping.html" class="nav-link">Shopping</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			<div class="col">
+					<div class="btn-group btn-dropdown float-lg-none">
+						<a href="#" class="btn dropdown-toggle  btn-d btn-sm dropdown-style btn-style-none d-md-inline-block  d-none" data-toggle="dropdown" aria-expanded="false">Projects</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="scene-and-bench.html" class="a-btn">Scene &amp; Bench</a>
+							</li>
+							<li>
+								<a href="visit-swedish-girls.html" class="a-btn">Visit Swedish Girls</a>
+							</li>
+							<li>
+								<a href="experience-swedish-girls.html" class="a-btn">Experience Swedish Girls</a>
+							</li>
+							<li>
+								<a href="served-by-swedish-girls.html" class="a-btn">Served by Swedish Girls</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+<!-- navbar END -->
+
+<!-- bloc-14 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-14">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-6 offset-md-1 col-md-6 animated fadeIn order-md-1 none order-sm-3 order-3" data-appear-anim-style="fadeIn">
+				<div>
+					<div class="container-div-bloc-16-style">
+					</div>
+					<h2 class="mg-clear projekt-titel-sub h2-scene-style">
+						Scene
+					</h2>
+					<p class="c-pad-all">
+						With inspiration from the theater&rsquo;s scenic backdrops, ornaments and optic illusions we created an interactive installation available for everyone. The scene will become a setting for different performances during the summer.<br>
+					</p>
+					<div class="divider-h divider-bloc-16-padding">
+						<span class="divider"></span>
+					</div>
+					<div class="row no-gutters">
+						<div class="col-12 column-proj-head col-md-12 col-sm-12 align-self-end col-lg-12">
+							<a href="#" data-lightbox="img/SG%20%2848%29copy.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%2848%29copy.jpg" class="img-fluid mx-auto d-block banner-project lazyload" alt="1_FORST_Lokal_Swedish_Girls_Release 1" /></a>
+						</div>
+						<div class="col-sm-6 align-self-end col-md-4 col-lg-6">
+							<div>
+								<a href="#" data-lightbox="img/SG%20%2863%29-1.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%2863%29-1.jpg" class="img-fluid mx-auto d-block mg-sm image-new lazyload" alt="placeholder image" /></a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-6">
+							<div>
+								<a href="#" data-lightbox="img/SG%20%2868%29.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%2868%29.jpg" class="img-fluid mg-sm mx-auto d-block image-new lazyload" alt="placeholder image" /></a>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-12">
+							<a href="#" data-lightbox="img/SG%20%289%29.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%289%29.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-padding-col offset-lg-0 col-md-5 order-lg-2 order-md-2 order-sm-1 order-1 col-lg-5">
+				<div class="card card-sq border-0">
+					<div class="card-body body-card body-card-projekt">
+						<h1 class="card-header-title-projekt c-pad-all mg-sm mg-sm-md mg-sm-sm mg-sm-xs">
+							Scene &amp; Bench
+						</h1>
+						<div class="divider-h divider-padding">
+							<span class="divider"></span>
+						</div>
+						<p class="c-pad-all">
+							Swedish Girls was invited to be a part of the Summer Exhibition 2021 curated by Stockholm Konst. The result is two installations located on Kungsholmen, Stockholm. <br><br>The theme for this year's exhibition is democracy and the exhibition runs between 28/5-12/9.<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-14 END -->
+
+<!-- bloc-15 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-15">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-6 offset-md-1 col-md-6 order-2 order-lg-1 order-md-1 animated fadeIn none" data-appear-anim-style="fadeIn">
+				<h2 class="projekt-titel-sub mg-clear h2-bench-style">
+					Bench
+				</h2>
+				<p class="c-pad-all p-bloc-15-style">
+					On Bergsgatan, we invite the graffiti collective BOYS to a continuous visual discussion on the topic of what&rsquo;s considered art. The work is created to symbolize and function as a point of connection between practices and people.<br>
+				</p>
+				<div class="divider-h divider-bloc-16-padding">
+					<span class="divider"></span>
+				</div>
+				<div>
+					<div class="row no-gutters">
+						<div class="col-sm-6 col-md-4 col-lg-7">
+							<a href="#" data-lightbox="img/SG%20%2837%29.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%2837%29.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-5">
+							<a href="#" data-lightbox="img/SG%20%2828%29.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/SG%20%2828%29.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-12">
+							<a href="#" data-lightbox="img/DSC_3061.jpg" data-gallery-id="gallery-1" data-frame="frameless-lb"><img src="img/lazyload-ph.png" data-src="img/DSC_3061.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-15 END -->
+
+<!-- footer -->
+<div class="bloc bgc-white-2 l-bloc" id="footer">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="d-flex offset-lg-2 col-lg-8">
+				<div class="div-delete2">
+					<a href="swedish-girls.html" class="btn btn-d btn-sq btn-xl button-blue float-lg-none"><span class="fa fa-angle-left icon-spacer icon-md icon-bleu-de-france button-blue2"></span>Home</a>
+					<h2 class="text-md-center text-sm-center text-center bottom-logo text-lg-center float-lg-none">
+						<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer END -->
+
+<!-- bloc-28 -->
+<div class="bloc bgc-anti-flash-white footer-border full-width-bloc l-bloc" id="bloc-28">
+	<div class="container ">
+		<div class="row">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-11 col offset-md-1">
+				<p class="text-sm-center text-center text-lg-left p-style mg-sm text-md-left">
+					Swedish Girls &nbsp;- From your Internet address -&nbsp;<a class="ltc-bleu-de-france" href="maps.html">Learn more</a>
+				</p>
+			</div>
+			<div class="col-lg-12">
+				<div class="divider-h divider-bloc-28-padding">
+					<span class="divider"></span>
+				</div>
+			</div>
+			<div class="left-padding-col col-lg-11 offset-lg-1 offset-md-1 col" id="footer-col-3">
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					mail@swedishgirls.org
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					Katrinebergsbacken 6
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-lg-sm text-md-left">
+					117 61 Stockholm
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-28 END -->
+
+</div>
+<!-- Main container END -->
+    
+
+<script src="./js/jquery-3.3.1.min.js?1244"></script>
+<script src="./js/bootstrap.bundle.min.js?1375"></script>
+<script src="./js/blocs.min.js?951"></script>
+<script src="./js/jquery.touchSwipe.min.js" defer></script>
+<script src="./js/lazysizes.min.js" defer></script>
+<!-- Additional JS END -->
+<style>
+
+
+ 
+ 
+  .footer-list {
+
+ 	
+ }
+ 
+ @media only screen and (max-width: 1000px) {
+  #footer-col-3 {
+ 
+ 	
+ }
+ }
+ 
+   .opacity-span {
+   	display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-left: 0;
+ 	font-size: 14px;
+ 	
+ }
+ 
+ @media only screen and (max-width: 770px) {
+  .opacity-span {
+  	display: block;
+
+    
+ 	
+ }
+ }
+ 
+ 	
+ 	
+ 	</style>
+
+</body>
+</html>
