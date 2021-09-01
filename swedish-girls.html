@@ -1,0 +1,740 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="konstnärskollektiv, designkollektiv, stockholm, konst, design">
+    <meta name="description" content="An art- and design collective based in Stockholm. Together, the emerging artists Matilda Ellow, Julia Jondell, Mira Bergh and Josefin Zachrisson form Swedish Girls.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?1193">
+	<link rel="stylesheet" type="text/css" href="style.css?8285">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?7564">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/feather.min.css">
+	<link href='https://fonts.googleapis.com/css?family=arialbold_italic&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>Swedish Girls</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<style>
+
+
+@font-face {
+	font-family:'arialbold_italic';
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf');
+	src: url('./fonts/ArialMT/Arial_Bold_Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'arialbold_italic';
+    src: url('./fonts/ArialMT/arial_bold_italic-webfont.woff2') format('woff2'),
+         url('./fonts/ArialMT/arial_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html {
+    cursor: url("https://static.cargo.site/images/up.png"), auto !important;
+}
+
+ .button-blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2px;
+  padding-right: 10px;
+}
+
+ .max-height {
+ 	overflow: hidden;
+ 	max-height: 80%;
+ }
+
+ .ref {
+ 	font-size: 16px;
+ 	color: black;
+ }
+
+
+ .search-path {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+ }
+
+
+ .div-delete2 {
+ 	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+ 
+
+ 
+  .test-delete {
+    min-width: 450px;
+ }
+ 
+ .right-padding-col {
+ 	z-index: 2;
+ }
+ 	
+ 
+ .bottom-logo {
+ 	white-space: nowrap;
+ }
+ 
+ #navbar {
+ 	z-index: 99;
+ }
+
+ .navbar {
+ 	padding: 0;
+ 	margin: 0;
+ 	z-index: 1;
+ 	
+ }
+ 
+ .blocsapp-special-menu blocsnav {
+ 	background: white;
+ }
+ 
+ .close-special-menu {
+ 	font-color: black;
+ 	
+ }
+ 
+ .close-icon {
+ 	color: black;
+ }
+ 
+ .card {
+ 	background: white;
+ }
+ 
+ .toggle-button {
+ 	position: fixed;
+ 	top: 15px;
+ 	left: 10px;
+ 	z-index: 10;
+ }
+ 
+  a[data-lightbox]:hover img {
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 	opacity: 1;
+ 	
+ }
+ 
+  @media only screen and (max-width: 1000px) {
+   a[data-lightbox]:hover img {
+    box-shadow: none;
+    
+    background-color: none;
+  }
+}
+ 
+
+ 
+  a[data-lightbox]:hover::before {
+  	content: none!important;
+  	
+  }
+  
+
+
+
+ .column-proj-head {
+ 	display: flex;
+    align-items: center;
+ 	justify-content: center;
+ }
+ 
+ .banner-project {
+ 	top: -50px;
+ }
+ 
+ 
+  .blocs-lb-container img {
+	max-height: 90vh;
+        
+ }
+ 
+   .blocs-lb-container {
+     border: none;
+     background: transparent;
+   }
+	
+  @media only screen and (max-width: 1000px) {
+  	.blocs-lb-container {
+  	left: 0;
+  	right: 0;
+
+  }
+  .blocs-lb-container img {
+  	height: auto;
+
+  	
+  }
+  }
+  
+  .prev-lightbox {
+  	left: 0;
+  	  	border-radius: 0;
+
+  }
+  
+  .next-lightbox {
+   right: 0;
+     	border-radius: 0;
+
+  }
+  
+  .close-lightbox {
+  	background: white;
+  	color: black;
+  
+  	top: 0;
+  	right: 0;
+  	border-radius: 0;
+  	transition: 0.2s;
+  	cursor: pointer;
+
+    
+  	
+  }
+    .close-lightbox:hover {
+  	background: white;
+  	color: black;
+
+  	
+  }
+
+</style>
+
+<script>
+
+</script>
+
+
+
+
+<style>
+
+
+ .listitem-all {
+ 	border-bottom: solid 4px #4B80F5;
+ }
+ 
+ 
+ #all {
+ 	display: none;
+ }
+ 
+ .ref::before {
+  content: "all";
+}
+
+ #footer {
+ 	display: none;
+ }
+ 
+ 
+ </style>
+    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
+    
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- navbar -->
+<div class="bloc full-width-bloc row-1-style bgc-white visit-video-top l-bloc" id="navbar">
+	<div class="container ">
+		<div class="row">
+			<div class="col-lg-1 col-md-1">
+				<p class="text-center float-lg-none h1-style text-lg-left text-md-left text-sm-center">
+					<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
+				</p>
+			</div>
+			<div class="left-padding-col col-lg-6 col-md-8">
+				<div class=" input-style">
+					<p><span class="ref"></span></p>
+					
+				</div>
+			</div>
+			<div class="left-padding-col offset-lg-1 offset-md-1 test-delete col-lg-5 col-md-7">
+					<nav class="navbar navbar-light row nav-invert bar-nav navbar-expand-md" role="navigation">
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 toggle-button" data-toggle="collapse" data-target=".navbar-22859" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-22859  fullscreen-nav open-left col-lg-12">
+							<ul class="site-navigation nav navbar-nav menu-nav">
+								<li class="nav-item">
+									<a href="swedish-girls.html" class="nav-link a-btn">All</a>
+								</li>
+								<li class="nav-item listitem-images">
+									<a href="images.html" class="nav-link">Images</a>
+								</li>
+								<li class="nav-item listitem-vid">
+									<a href="videos.html" class="nav-link">Videos</a>
+								</li>
+								<li class="nav-item listitem-maps">
+									<a href="maps.html" class="nav-link">Maps</a>
+								</li>
+								<li class="nav-item listitem-news">
+									<a href="news.html" class="nav-link">News</a>
+								</li>
+								<li class="nav-item listitem-shopping">
+									<a href="shopping.html" class="nav-link">Shopping</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			<div class="col">
+					<div class="btn-group btn-dropdown float-lg-none">
+						<a href="#" class="btn dropdown-toggle  btn-d btn-sm dropdown-style btn-style-none d-md-inline-block  d-none" data-toggle="dropdown" aria-expanded="false">Projects</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="scene-and-bench.html" class="a-btn">Scene &amp; Bench</a>
+							</li>
+							<li>
+								<a href="visit-swedish-girls.html" class="a-btn">Visit Swedish Girls</a>
+							</li>
+							<li>
+								<a href="experience-swedish-girls.html" class="a-btn">Experience Swedish Girls</a>
+							</li>
+							<li>
+								<a href="served-by-swedish-girls.html" class="a-btn">Served by Swedish Girls</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+<!-- navbar END -->
+
+<!-- bloc-1 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-1">
+	<div class="container ">
+		<div class="row">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-6 offset-md-1">
+				<div>
+					<p class="mg-sm">
+						About 9 999 999 999 results (0,01 seconds)
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-1 END -->
+
+<!-- bloc-2 -->
+<div class="bloc full-width-bloc l-bloc" id="bloc-2">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-6 offset-md-1 col-md-6">
+				<div>
+					<p class="search-path mg-sm">
+						www.swedishgirls.org › projects ›&nbsp;scene_&amp;_bench
+					</p>
+					<h2 class="heading2-link mg-sm">
+						<a class="heading2-link" href="scene-and-bench.html">Scene &amp; Bench</a><br>
+					</h2>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-lg-5 col-md-5 col-sm-5 col-5 ">
+						<div class="max-height">
+							<a href="scene-and-bench.html"><img src="img/lazyload-ph.png" data-src="img/SG%20%2848%29copy.jpg" class="img-fluid mx-auto d-block mg-sm max-height lazyload" alt="cornfield" /></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+						<div class="max-height">
+							<a href="scene-and-bench.html"><img src="img/lazyload-ph.png" data-src="img/SG%20%2868%29.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="cornfield" /></a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+						<div class="max-height">
+							<a href="scene-and-bench.html"><img src="img/lazyload-ph.png" data-src="img/SG%20%2837%29.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="cornfield" /></a>
+						</div>
+					</div>
+				</div>
+				<p class="mg-clear p-bloc-2-style text-w-90">
+					Swedish Girls was invited to be a part of the Summer Exhibition 2021 curated by Stockholm Konst. The result is two installations located on Kungsholmen, Stockholm. The theme for this year's exhibition is democracy and the exhibition runs between 28/5-12/9.<br>
+				</p>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div>
+					<p class="mg-sm search-path">
+						www.swedishgirls.org › projects › visit_swedish_girls
+					</p>
+					<h2 class="mg-sm">
+						<a class="heading2-link" href="experience-swedish-girls.html">Visit Swedish Girls</a><br>
+					</h2>
+					<p class="mg-clear">
+						Currently, there are travel restrictions in place, for more information Visit Swedish Girls at www.swedishgirls.org. Their design process has exciting ...
+					</p>
+				</div>
+				<div>
+					<div class="container-div-style">
+					</div>
+					<p class="mg-sm search-path">
+						www.swedishgirls.org › projects › experience_swedish_girls
+					</p>
+					<h2 class="mg-sm">
+						<a class="heading2-link" href="experience-swedish-girls.html">Experience Swedish Girls</a><br>
+					</h2>
+					<p class="mg-clear">
+						Four rooms with experience based installations, offering you a glimpse of Swedish Girls. We invited you to taste, feel, admire, dance and work with us ...
+					</p>
+				</div>
+				<div>
+					<div class="container-div-style">
+					</div>
+					<p class="mg-sm search-path">
+						www.swedishgirls.org › projects › served_by_swedish_girls
+					</p>
+					<h2 class="heading2-link mg-sm">
+						<a class="heading2-link" href="served-by-swedish-girls.html">Served by Swedish Girls</a><br>
+					</h2>
+					<p class="mg-clear p-info">
+						Presenting a group exhibition with Josefin Zachrisson, Matilda Ellow, Julia Jondell and Mira Bergh, all part of Swedish Girls ...<br>
+					</p>
+				</div>
+				<div>
+					<div class="container-div-style">
+					</div>
+				</div>
+				<div class="container-div-bloc-2-style">
+					<div class="divider-h">
+						<span class="divider"></span>
+					</div>
+				</div>
+				<div class="container-div-0-bloc-2-style">
+				</div>
+			</div>
+			<div class="right-padding-col offset-lg-0 col-md-5 col-lg-5">
+				<div class="card card-sq border-0">
+					<div class="card-header card">
+						<div class="row no-gutters">
+							<div class="col">
+								<img src="img/lazyload-ph.png" data-src="img/swedish-girls.jpg" class="img-fluid mx-auto d-block img-top-radius lazyload" alt="placeholder image" />
+							</div>
+						</div>
+					</div>
+					<div class="card-body body-card">
+						<h1 class="card-header-title c-pad-all mg-clear">
+							Swedish Girls
+						</h1>
+						<div class="divider-h divider-padding">
+							<span class="divider"></span>
+						</div>
+						<p class="p-14-style c-pad-all mg-clear">
+							Available on
+						</p>
+						<div class="divider-h divider-padding">
+							<span class="divider"></span>
+						</div><a href="https://www.instagram.com/_swedish_girls_/?hl=en" class="btn btn-d btn-sq button-test btn-sm c-pad-all btn-block" data-target="_blank" target="_blank"><span class="fa fa-instagram icon-spacer"></span>Instagram</a>
+						<div class="divider-h divider-bloc-2-padding">
+							<span class="divider"></span>
+						</div>
+						<p class="c-pad-all">
+							<strong>An art- and design collective based in Stockholm. Together, the emerging artists Matilda Ellow, Julia Jondell, Mira Bergh and Josefin Zachrisson form Swedish Girls.</strong><br><br>Swedish Girls challenge normative ways of working and have a conceptual focus. Their projects exist in the borderland of art and design and handle contemporary discussions to arouse feelings and continued conversations.<br><br>Alongside the collective every member has their individual practice, their work includes a wide range of collaborations, designs and exhibited artwork.<br><br><i>“Together and individually, we claim a space in an industry that needs us.” - Swedish Girls</i><br>
+						</p>
+					</div>
+				</div>
+				<div id="accordion-3927">
+					<div class="card border-0 card-sq card-border">
+						<div class="card-header header-card" id="heading2">
+							<a href="#" class="btn btn-d btn-sq button-test btn-style-none float-lg-none btn-block btn-sm" data-toggle="collapse" aria-expanded="false" data-target="#accordion-3927-item-1" aria-controls="#accordion-3927-item-1" target="#accordion-3927-item-1"><span class="fa fa-angle-down float-lg-right icon-spacer icon-md float-md-right float-sm-right float-right"></span>Matilda Ellow</a>
+						</div>
+						<div id="accordion-3927-item-1" class="collapse" aria-labelledby="heading2" data-parent="#accordion-3927">
+							<div class="card-body body-card-2">
+								<div class="row no-gutters">
+									<div class="col-lg-5 col-md-6 col-sm-6 col-7">
+										<img src="img/lazyload-ph.png" data-src="img/matilda-ellow.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
+									</div>
+								</div>
+							</div>
+							<div class="card-body body-card">
+								<div>
+									<p class="c-pad-all sub-head mg-clear">
+										Available on
+									</p>
+									<div class="divider-h divider-padding">
+										<span class="divider"></span>
+									</div><a href="https://www.instagram.com/msellow/" class="btn btn-d btn-sq button-test btn-sm c-pad-all btn-block" data-target="_blank" target="_blank"><span class="fa fa-instagram icon-spacer"></span>Instagram</a>
+									<div class="divider-h divider-padding">
+										<span class="divider"></span>
+									</div>
+									<p class="c-pad-all sub-head mg-clear">
+										<strong>About</strong>
+									</p>
+									<p class="c-pad-all">
+										Matilda Ellow is a Swedish artist and designer. Noted for her strong will and extremely well thought out style. Her line of work includes furniture design, products, set design and anything she sets her mind to. Ellow is known for her award winning degree work “Self Titled”, shown at Ung Svensk Form 2020. She is also head of Graphic design at Swedish Girls.
+									</p>
+									<p class="card-body-div c-pad-all mg-sm">
+										<strong>Born:&nbsp;</strong><span class="opacity-span">September 11, 1992,</span>&nbsp;<a href="https://en.wikipedia.org/wiki/Hospital">Hospital</a>
+									</p>
+									<p class="card-body-div c-pad-all float-lg-none mg-md">
+										<strong>Length:&nbsp;</strong><span class="opacity-span">1.62 m</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 card-sq card-border">
+						<div class="card-header header-card" id="heading2">
+							<a href="#" class="btn btn-d btn-sq button-test btn-style-none float-lg-none btn-block c-pad-all btn-sm" data-toggle="collapse" aria-expanded="false" data-target="#accordion-3927-item-2" aria-controls="accordion-3927-item-2" target="#accordion-3927-item-2"><span class="fa fa-angle-down icon-spacer icon-md float-lg-right float-md-right float-sm-right float-right"></span>Julia Jondell</a>
+						</div>
+						<div id="accordion-3927-item-2" class="collapse" aria-labelledby="heading2" data-parent="#accordion-3927">
+							<div class="card-body body-card-2">
+								<div class="row no-gutters">
+									<div class="col-lg-5 col-md-6 col-sm-6 col-7">
+										<img src="img/lazyload-ph.png" data-src="img/julia-jondell.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
+									</div>
+								</div>
+							</div>
+							<div class="card-body body-card">
+								<div>
+									<p class="c-pad-all mg-clear sub-head">
+										Available on
+									</p>
+									<div class="divider-h divider-padding">
+										<span class="divider"></span>
+									</div><a href="https://www.instagram.com/jjondell/" class="btn btn-d btn-sq button-test btn-sm c-pad-all btn-block" data-target="_blank" target="_blank"><span class="fa fa-instagram icon-spacer"></span>Instagram</a>
+									<div class="divider-h divider-padding">
+										<span class="divider"></span>
+									</div>
+									<p class="c-pad-all sub-head mg-clear">
+										<strong>About</strong>
+									</p>
+									<p class="c-pad-all">
+										Julia Jondell is a Swedish artist and designer. Noted for her mind blowing sense of details and great focus. In her career, her main focus has been on smaller pieces with great personal attachment. Jondell is known for always creating one of a kind objects. In 2014 she started her studies in Portugal, Lisabon learning to manage metal and making jewelry. One of Jondells recently known works is “Affektion i glas”.
+									</p>
+									<p class="card-body-div c-pad-all mg-sm">
+										<strong>Born:&nbsp;</strong><span class="opacity-span">February 10, 1992,</span>&nbsp;<a href="https://en.wikipedia.org/wiki/Hospital">Hospital</a>
+									</p>
+									<p class="card-body-div c-pad-all float-lg-none mg-md">
+										<strong>Length:&nbsp;</strong><span class="opacity-span">1.67 m</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 card-sq card-border">
+						<div class="card-header header-card" id="heading3">
+							<a href="#" class="btn btn-d btn-sq button-test btn-style-none float-lg-none btn-block c-pad-all btn-sm" data-toggle="collapse" aria-expanded="false" data-target="#accordion-3927-item-3" aria-controls="accordion-3927-item-3" target="#accordion-3927-item-3"><span class="fa fa-angle-down icon-spacer float-lg-right icon-md float-md-right float-sm-right float-right"></span>Mira Bergh</a>
+						</div>
+						<div id="accordion-3927-item-3" class="collapse" aria-labelledby="heading3" data-parent="#accordion-3927">
+							<div class="card-body body-card-2">
+								<div class="row no-gutters">
+									<div class="col-lg-5 col-md-6 col-sm-6 col-7">
+										<img src="img/lazyload-ph.png" data-src="img/mira-bergh.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
+									</div>
+								</div>
+							</div>
+							<div class="card-body body-card">
+								<div>
+									<p class="c-pad-all mg-clear sub-head">
+										Available on
+									</p>
+									<div class="divider-h divider-padding">
+										<span class="divider"></span>
+									</div><a href="https://www.instagram.com/mirabergh/" class="btn btn-d btn-sq button-test btn-sm c-pad-all btn-block" data-target="_blank" target="_blank"><span class="fa fa-instagram icon-spacer"></span>Instagram</a>
+									<div class="divider-h divider-padding">
+										<span class="divider"></span>
+									</div>
+									<p class="c-pad-all sub-head mg-clear">
+										<strong>About</strong>
+									</p>
+									<p class="c-pad-all">
+										Mira Bergh is a Swedish artist and designer. Noted for her ability to solve everything. Her work spans a range of styles, from furniture and sculptures, to set design and curating. Bergh is known for her furniture collection “Seats System” (<a href="https://www.seats-system.com">https://www.seats-system.com</a>) made together with Josefin Zachrisson and for co-funding the design network “Drip”.
+									</p>
+									<p class="card-body-div c-pad-all mg-sm">
+										<strong>Born:&nbsp;</strong><span class="opacity-span">November 16, 1993,</span>&nbsp;<a href="https://en.wikipedia.org/wiki/Hospital">Hospital</a>
+									</p>
+									<p class="card-body-div c-pad-all float-lg-none mg-md">
+										<strong>Length:&nbsp;</strong><span class="opacity-span">1.74 m</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 card-sq card-border">
+						<div class="card-header header-card" id="heading4">
+							<a href="#" class="btn btn-d btn-sq button-test btn-style-none float-lg-none btn-block c-pad-all btn-sm" data-toggle="collapse" aria-expanded="false" data-target="#accordion-3927-item-4" aria-controls="accordion-3927-item-4" target="#accordion-3927-item-4"><span class="fa fa-angle-down icon-spacer float-lg-right icon-md float-md-right float-sm-right float-right"></span>Josefin Zachrisson</a>
+						</div>
+						<div id="accordion-3927-item-4" class="collapse" aria-labelledby="heading4" data-parent="#accordion-3927">
+							<div class="card-body body-card-2">
+								<div class="row no-gutters">
+									<div class="col-lg-5 col-md-6 col-7">
+										<img src="img/lazyload-ph.png" data-src="img/josefin-zachrisson.jpg" class="img-fluid mx-auto d-block mg-sm lazyload" alt="placeholder image" />
+									</div>
+								</div>
+							</div>
+							<div class="card-body body-card">
+								<div>
+									<p class="c-pad-all mg-clear sub-head">
+										Available on
+									</p>
+									<div class="divider-h divider-padding">
+										<span class="divider"></span>
+									</div><a href="https://www.instagram.com/josefinzachrisson/" class="btn btn-d btn-sq button-test btn-sm c-pad-all btn-block" data-target="_blank" target="_blank"><span class="fa fa-instagram icon-spacer"></span>Instagram</a>
+									<div class="divider-h divider-padding">
+										<span class="divider"></span>
+									</div>
+									<p class="c-pad-all sub-head mg-clear">
+										<strong>About</strong>
+									</p>
+									<p class="c-pad-all">
+										Josefin Zachrisson is a Swedish artist and designer. Noted for her creativity that goes far beyond human ability. Her work spans a range of expressions from experimental to conceptual. During her career, she has released many top-ranked works such as the furniture collection “Seats System” (<a href="https://www.seats-system.com">https://www.seats-system.com</a>) with Mira Bergh and the scenography for the Swedish Grammy awards. Zachrisson is represented as a model at Mikas Stockholm and as an artist at MauMau collective.
+									</p>
+									<p class="card-body-div c-pad-all mg-sm">
+										<strong>Born:&nbsp;</strong><span class="opacity-span">October 21, 1994,</span>&nbsp;<a href="https://en.wikipedia.org/wiki/Hospital">Hospital</a>
+									</p>
+									<p class="card-body-div c-pad-all float-lg-none mg-md">
+										<strong>Length:&nbsp;</strong><span class="opacity-span">1.74 m</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 card-sq">
+					<div class="card-body body-card">
+						<h3 class="mg-clear card-header-title-copy-1 c-pad-all">
+							People also search for
+						</h3>
+						<div class="row">
+							<div class="col-6 col-lg-4 col-sm-4 col-md-6">
+								<a href="http://hekmatara.com" data-target="_blank" target="_blank"><img src="img/lazyload-ph.png" data-src="img/kourosh_cherub_2.jpg" class="img-fluid mx-auto d-block pasf-img mg-sm lazyload" alt="field" /></a>
+								<p>
+									<a class="pasf-title float-lg-none" href="https://www.instagram.com/hekmatara/" data-target="_blank" target="_blank">Kourosh Hekmatara<br></a>Webmaster
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-div-0-style">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-2 END -->
+
+<!-- footer -->
+<div class="bloc bgc-white-2 l-bloc" id="footer">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="d-flex offset-lg-2 col-lg-8">
+				<div class="div-delete2">
+					<a href="swedish-girls.html" class="btn btn-d btn-sq btn-xl button-blue float-lg-none"><span class="fa fa-angle-left icon-spacer icon-md icon-bleu-de-france button-blue2"></span>Home</a>
+					<h2 class="text-md-center text-sm-center text-center bottom-logo text-lg-center float-lg-none">
+						<span class="sw-blue">Sw</span><span class="ed-red">ed</span><span class="is-yellow">is</span><span class="hg-blue">h G</span><span class="ir-green">ir</span><span class="ls-red">ls</span>
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer END -->
+
+<!-- bloc-28 -->
+<div class="bloc bgc-anti-flash-white footer-border full-width-bloc l-bloc" id="bloc-28">
+	<div class="container ">
+		<div class="row">
+			<div class="col-12 offset-lg-1 left-padding-col col-lg-11 col offset-md-1">
+				<p class="text-sm-center text-center text-lg-left p-style mg-sm text-md-left">
+					Swedish Girls &nbsp;- From your Internet address -&nbsp;<a class="ltc-bleu-de-france" href="maps.html">Learn more</a>
+				</p>
+			</div>
+			<div class="col-lg-12">
+				<div class="divider-h divider-bloc-28-padding">
+					<span class="divider"></span>
+				</div>
+			</div>
+			<div class="left-padding-col col-lg-11 offset-lg-1 offset-md-1 col" id="footer-col-3">
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					mail@swedishgirls.org
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-md-sm text-md-left">
+					Katrinebergsbacken 6
+				</p>
+				<p class="text-sm-center text-center text-lg-left mg-sm opacity-span mg-lg-sm text-md-left">
+					117 61 Stockholm
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-28 END -->
+
+</div>
+<!-- Main container END -->
+    
+
+<script src="./js/jquery-3.3.1.min.js?4997"></script>
+<script src="./js/bootstrap.bundle.min.js?2080"></script>
+<script src="./js/blocs.min.js?5886"></script>
+<script src="./js/lazysizes.min.js" defer></script>
+<!-- Additional JS END -->
+<style>
+
+
+ 
+ 
+  .footer-list {
+
+ 	
+ }
+ 
+ @media only screen and (max-width: 1000px) {
+  #footer-col-3 {
+ 
+ 	
+ }
+ }
+ 
+   .opacity-span {
+   	display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-left: 0;
+ 	font-size: 14px;
+ 	
+ }
+ 
+ @media only screen and (max-width: 770px) {
+  .opacity-span {
+  	display: block;
+
+    
+ 	
+ }
+ }
+ 
+ 	
+ 	
+ 	</style>
+
+</body>
+</html>
